@@ -154,7 +154,7 @@ body{
 .nav-button-right .header-nav-menu .menu-btn.menu-next-page{
     margin: 0;
     padding: 0;
-    top: 70px;
+    top: 84px;
 }
 .header-nav-menu.next-page-nav .menu-btn.menu-next-page span,
 .header-nav-menu.next-page-nav .menu-btn.menu-next-page:before, 
@@ -908,26 +908,6 @@ body{
     text-align: left;
     text-decoration: none;
 }
-/*.section-about-us .about-us-left a{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(183deg, #5B93C7 2.79%, #9DBEDD 97.8%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
-    border: none;
-    border-radius: 50px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 100%;
-    max-width: 320px;
-    height: 110px;
-    line-height: 110px;
-    display: block;
-}*/
 .section-about-us .about-us-left .blob-btn {
     z-index: 1;
     position: relative;
@@ -1051,6 +1031,8 @@ body{
     height: auto;
 }
 
+
+
 /* About Us CSS End */
 
 
@@ -1134,16 +1116,27 @@ body{
     padding: 80px 0 0;
     background: #FBFBFB;
 }
-.section-footer .footer-row{
-    margin: 0;
-    padding: 0 80px;
+
+.section-footer .footer-columns{
+    margin: 0 -15px;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.section-footer .footer-columns .columns-25{
+    margin: 0 15px;
+    box-sizing: border-box;
+    width: calc(25% - 30px);
+}
+.section-footer .footer-row{
+    margin: 0 0;
+    padding: 0 80px;
+    /* display: flex;
+    column-gap: 20px; */
 }
 .section-footer .footer-row > .footer-about-us{
-    margin: 0;
+    margin: 0 15px;
     padding: 0;
-    width: 25%;
+    /* width: 25%; */
 }
 .section-footer .footer-row > .footer-about-us img{
     margin: 0;
@@ -1166,7 +1159,7 @@ body{
 .section-footer .footer-row > .sitemap-nav-list{
     margin: 0 auto;
     padding: 0;
-    width: 25%;
+    /* width: 25%; */
     display: table;
 }
 .section-footer .footer-row > .sitemap-nav-list .div-align-center{
@@ -1293,26 +1286,29 @@ body{
     line-height: 36px;
 }
 .section-our-services .services-thumbnail-container{
-    margin: 70px 0 0 0;
+    margin: 70px -10px 0;
     padding: 0;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 .section-our-services .services-thumbnail-container > .services-thumbnail-left,
 .section-our-services .services-thumbnail-container > .services-thumbnail-right{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
-    float: left;
-    width: 50%;
+    box-sizing: border-box;
+    width: calc(50% - 40px);
+    /* width: 50%;
+    float: left; */
 }
 .section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header{
-    margin: 0 0 10px 0;
+    margin: 0 0px 10px;
     padding: 0;
     display: flex;
-    column-gap: 10px;
+    /* column-gap: 10px; */
 }
 .section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button{
-    margin: 0;
+    margin: 0 10px 0px 0px;
     padding: 0 0 0 24px;
     background: #FFF;
     border-radius: 4px;
@@ -1328,9 +1324,11 @@ body{
     text-transform: capitalize;
     height: 64px;
     line-height: 64px;
-    width: 100%;
+    /* width: 100%; */
     display: block;
     position: relative;
+    box-sizing: border-box;
+    width: calc(50% - 0px);
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1501,19 +1499,21 @@ body{
     line-height: 36px;
 }
 .section-the-gulfway-advantage .gulfway-advantage-container{
-    margin: 40px 0 0 0;
+    margin: 40px -15px 0;
     padding: 0;
     display: flex;
-    column-gap: 40px;
+    flex-wrap: wrap;
+    /* column-gap: 40px; */
 }
 .section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb{
-    margin: 0;
+    margin: 0 15px 30px;
     padding: 50px;
     border-radius: 4px;
     border: 1px solid #F2F3F5;
     background: #FFF;
     box-shadow: 0px 12px 50px 0px rgba(6, 28, 61, 0.03);
-    width: 33.33333333333333%;
+    width: calc(33.33333333333333% - 30px);
+    box-sizing: border-box;
     text-align: center;
 }
 .section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon{
@@ -1633,15 +1633,17 @@ body{
     padding: 0;
 }
 .section-tools-and-technologies .tools-and-technologies-container .tools-row {
-    margin: 0;
+    margin: 0 -10px;
     padding: 0;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
-    width: 25%;
+    box-sizing: border-box;
+    width: calc(25% - 20px);
 }
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button:nth-child(3){
     margin-bottom: 0;
@@ -1696,9 +1698,10 @@ body{
     color: #ffffff;
 }
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
-    width: 75%;
+    width: calc(75% - 20px);
+    box-sizing: border-box;
     border: 1px solid #F2F3F5;
     border-bottom: 1px solid transparent;
     box-shadow: 0px 12px 30px 0px rgba(6, 28, 61, 0.02);
@@ -2274,15 +2277,16 @@ body{
     padding: 0 80px;
 }
 .section-body-content .section-body-row{
-    margin: 0;
+    margin: 0 -20px 0;
     padding: 0;
     display: flex;
-    column-gap: 45px;
+    flex-wrap: wrap;
 }
 .section-body-content .section-body-row .section-accordion-left{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 30%;
+    box-sizing: border-box;
+    width: calc(30% - 40px);
 } 
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list{
     margin: 0;
@@ -2300,9 +2304,6 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-}
-.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li:last-child{
-    border-bottom: none;
 }
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a{
     margin: 0;
@@ -2325,6 +2326,9 @@ body{
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li:last-child a{
+    border-bottom: none;
 }
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i{
     background-color: #FAFAFA;
@@ -2372,9 +2376,10 @@ body{
     background: #ffffff;
 }
 .section-body-content .section-body-row .section-accordion-right{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 70%;
+    box-sizing: border-box;
+    width: calc(70% - 40px);
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content{
     margin: 0;
@@ -2429,17 +2434,18 @@ body{
     line-height: 32px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image{
-    margin: 40px 0 0px 0;
+    margin: 40px -10px 0px;
     padding: 0;
     width: 100%;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image img{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     max-width: 100%;
-    width: 100%;
+    width: calc(33.33333333333333% - 20px);
     height: auto;
     border-radius: 16px;
 }
@@ -2568,12 +2574,13 @@ body{
     width: 100%;
 }
 .section-engineering-excellence .engineering-excellence-container .engineering-excellence-row{
-    margin: 0;
+    margin: 0 -15px;
     padding: 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
 }
 .section-engineering-excellence .engineering-excellence-container .engineering-excellence-row.operational-efficiency-background{
     border-radius: 16px;
@@ -2581,14 +2588,15 @@ body{
     padding: 50px 50px 20px 50px;
 }
 .section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content{
-    margin: 0 0 30px 0;
+    margin: 0 15px 30px;
     padding: 30px;
-    /* width: 50%; */
+    width: calc(50% - 30px);
+    box-sizing: border-box;
     border-radius: 16px;
     border: 1px solid #E6E8EC;
     background: rgba(0, 0, 0, 0.02);
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.03);
-    width: calc(1/2*100% - (1 - 1/2)*30px);
+    /* width: calc(1/2*100% - (1 - 1/2)*30px); */
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -3479,12 +3487,62 @@ body{
     line-height: 32px;
 }
 .section-welcome-to-gulfway .gulfway-heading h1 {
-    font-size: 240px;
-    line-height: 180px;
+    font-size: 220px;
+    line-height: 172px;
 }
 .section-welcome-to-gulfway .gulfway-heading h2 {
-    font-size: 100px;
+    font-size: 80px;
+    line-height: 90px;
 }
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 72px;
+    line-height: 76px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb {
+    margin: 0px auto 0 auto;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li a {
+    font-size: 18px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i {
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+    font-size: 30px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a{
+    font-size: 18px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb h1 {
+    font-size: 58px;
+    line-height: 50px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb p,
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list ul li {
+    font-size: 18px;
+    line-height: 32px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head h1,
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p {
+    font-size: 28px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+
+
+
 
 }
 
@@ -3562,6 +3620,122 @@ body{
 .section-footer .container-copyright p {
     padding: 15px 0 15px 0;
     font-size: 16px;
+}
+.section-our-services .we-provide-heading h1 {
+    font-size: 42px;
+}
+.section-our-services .we-provide-heading p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+.section-our-services .we-provide-heading {
+    margin: 30px 0 0 0;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button {
+    padding: 0 0 0 20px;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:before {
+    right: 20px;
+}
+.section-our-services .accordion-body {
+    padding: 30px 30px;
+    column-gap: 20px;
+}
+.section-our-services .accordion-body .inner-services-left .services-icons {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+}
+.section-our-services .accordion-body .inner-services-left .services-icons i {
+    font-size: 42px;
+}
+.section-our-services .accordion-body .inner-services-right h1 {
+    font-size: 20px;
+    line-height: 26px;
+}
+.section-our-services .accordion-body .inner-services-right p {
+    font-size: 16px;
+}
+.section-our-services .accordion-body .inner-services-right a {
+    margin: 36px 0 0 0;
+    font-size: 16px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading h1 {
+    font-size: 42px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb {
+    padding: 30px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon i {
+    font-size: 40px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb p {
+    font-size: 16px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb h3 {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb a {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+}
+.section-tools-and-technologies .tools-and-technologies-head h2 {
+    font-size: 42px;
+    line-height: 50px;
+}
+.section-tools-and-technologies .tools-and-technologies-head p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb p br{
+    display: none;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button {
+    padding: 0 0 0 20px;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 64px;
+    line-height: 72px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li a {
+    font-size: 16px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a {
+    font-size: 17px;
+    padding: 14px 20px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 26px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a span {
+    padding-left: 10px;
 }
 
 
@@ -3654,6 +3828,96 @@ body{
 .section-footer .footer-row > .footer-about-us p br{
     display: none;
 }
+.section-our-services .we-provide-heading h1 {
+    font-size: 36px;
+}
+.section-our-services .we-provide-heading p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button {
+    font-size: 15px;
+}
+.section-our-services .services-thumbnail-container {
+    margin: 40px -10px 0;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading h1 {
+    font-size: 36px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    line-height: 27px;
+}
+.section-tools-and-technologies .tools-and-technologies-head h2 {
+    font-size: 36px;
+    line-height: 46px;
+}
+.section-tools-and-technologies .tools-and-technologies-head p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:before,
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button:before {
+    right: 20px;
+    font-size: 12px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb a i {
+    margin: 0 0 0 4px;
+    font-size: 13px;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech img {
+    height: 65px;
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li a {
+    font-size: 15px;
+}
+.header-section.next-pages-background {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.section-welcome-to-gulfway.next-pages-body {
+    transform: translate(0px, 515px);
+}
+.section-body-content {
+    padding: 0 50px;
+}
+.section-body-content .section-body-row .section-accordion-left {
+    width: calc(35% - 40px);
+}
+.section-body-content .section-body-row .section-accordion-right {
+    width: calc(65% - 40px);
+}.section-body-content .section-body-row .section-accordion-right > .services-next-page-content {
+    padding: 40px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb h1 {
+    font-size: 44px;
+    line-height: 50px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb p, 
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services p {
+    font-size: 17px;
+    line-height: 28px;
+    margin: 6px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb img {
+    margin: 30px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services {
+    margin: 30px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i.icon-youtube:before {
+    font-size: 20px;
+    right: 3px;
+    top: -1px;
+}
+
 
 }
 
@@ -3760,8 +4024,172 @@ body{
 .section-welcome-to-gulfway .breadcrumb-list ul li:after {
     font-size: 16px;
 }
-
-
+.section-our-services .we-provide-heading {
+    margin: 20px 0 0 0;
+}
+.section-our-services .we-provide-heading h1 {
+    font-size: 32px;
+}
+.section-our-services .we-provide-heading p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button {
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    height: 56px;
+    line-height: 56px;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:before, 
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button:before {
+    right: 15px;
+    font-size: 10px;
+}
+.section-our-services .accordion-body {
+    padding: 25px 25px;
+}
+.section-our-services .accordion-body .inner-services-left .services-icons {
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+}
+.section-our-services .accordion-body .inner-services-left .services-icons i {
+    font-size: 36px;
+}
+.section-our-services .accordion-body .inner-services-right h1 {
+    font-size: 18px;
+}
+.section-our-services .accordion-body .inner-services-right p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.section-our-services .accordion-body .inner-services-right a {
+    margin: 16px 0 0 0;
+    font-size: 14px;
+}
+.section-our-services .accordion-body .inner-services-right a i {
+    margin: 0 0 0 3px;
+    font-size: 12px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading h1 {
+    font-size: 32px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb {
+    padding: 25px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon {
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon i {
+    font-size: 36px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb h3 {
+    font-size: 18px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb p {
+    font-size: 14px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb a {
+    margin: 24px 0 0 0;
+    font-size: 14px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb a i {
+    margin: 0 0 0 2px;
+    font-size: 12px;
+}
+.section-tools-and-technologies .tools-and-technologies-head h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+.section-tools-and-technologies .tools-and-technologies-head p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button {
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    height: 56px;
+    line-height: 56px;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech img {
+    height: 58px;
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 52px;
+    line-height: 56px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li a {
+    font-size: 14px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li:after {
+    font-size: 16px;
+    margin: 0 0px 0 10px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a {
+    font-size: 16px;
+    padding: 12px 16px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    font-size: 24px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a span {
+    padding-left: 7px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i.icon-youtube:before {
+    font-size: 18px;
+    right: 3px;
+    top: -2px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content {
+    padding: 30px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb p, 
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 5px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
+    margin: 30px -10px 0px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list h4 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list ul li {
+    font-size: 16px;
+    line-height: 30px;
+}
+.section-welcome-to-gulfway.next-pages-body {
+    transform: translate(0px, 481px);
+}
+.section-body-content .section-body-row {
+    margin: 0 -15px 0;
+}
+.section-body-content .section-body-row .section-accordion-left {
+    width: calc(38% - 30px);
+    margin: 0 15px;
+}
+.section-body-content .section-body-row .section-accordion-right {
+    width: calc(62% - 30px);
+    margin: 0 15px;
+}
 
 
 
@@ -3789,6 +4217,153 @@ body{
     font-size: 20px;
     position: relative;
 }
+.section-footer .footer-columns .columns-25 {
+    width: calc(50% - 30px);
+}
+.section-footer .footer-row > .footer-about-us p br {
+    display: block;
+}
+.section-footer .footer-row > .sitemap-nav-list .div-align-center {
+    margin: 0 0 50px 0;
+    display: inline-block;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left, 
+.section-our-services .services-thumbnail-container > .services-thumbnail-right {
+    margin: 0 10px;
+    padding: 0;
+    box-sizing: border-box;
+    width: calc(100% - 0px);
+}
+.section-our-services .we-provide-heading h1 {
+    font-size: 28px;
+}
+.section-our-services .we-provide-heading p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.section-our-services .we-provide-heading {
+    margin: 16px 0 0 0;
+}
+.section-our-services .services-thumbnail-container {
+    margin: 30px -10px 0;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading h1 {
+    font-size: 28px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading {
+    margin: 50px 0 0px 0;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb h3 {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb p {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container {
+    margin: 40px -10px 0;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb {
+    margin: 0 10px 20px;
+    width: calc(50% - 20px);
+}
+.section-tools-and-technologies .tools-and-technologies-head {
+    margin: 50px 0 40px 0;
+    padding: 0;
+}
+.section-tools-and-technologies .tools-and-technologies-head h2 {
+    font-size: 28px;
+    line-height: 38px;
+}
+.section-tools-and-technologies .tools-and-technologies-head p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left {
+    width: calc(35% - 20px);
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right {
+    width: calc(65% - 20px);
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+.header-section.next-pages-background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-all-next-pages {
+    padding: 50px 0 0 0;
+}
+.section-welcome-to-gulfway.next-pages-body {
+    transform: translate(0px, 411px);
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a {
+    font-size: 14px;
+    padding: 12px 14px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    font-size: 22px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a span {
+    padding-left: 5px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i.icon-youtube:before {
+    font-size: 16px;
+    right: 2px;
+    top: -1px;
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i.content-marketing {
+    font-size: 22px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb p,
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 4px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb img {
+    margin: 20px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services {
+    margin: 20px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
+    margin: 20px -10px 0px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list h4 {
+    font-size: 16px;
+    line-height: 26px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list ul li {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+
+
+
 
 }
 
@@ -3813,6 +4388,133 @@ body{
 .header-section {
     top: 50px;
 }
+.main-footer {
+    margin: 50px 0 0 0;
+}
+.section-ready-to-our-professional {
+    height: 220px;
+}
+.section-welcome-to-gulfway .gulfway-heading h1 {
+    font-size: 110px;
+    line-height: 88px;
+    -webkit-text-stroke-width: 5px;
+}
+.section-welcome-to-gulfway .gulfway-heading h2 {
+    font-size: 42px;
+    line-height: 64px;
+    left: 50px;
+}
+.section-about-us .about-us-left, 
+.section-about-us .about-us-right {
+    margin: 10px 0 0 0;
+}
+.section-about-us .about-us-left h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.section-about-us .about-us-left p br{
+    display: none;
+}
+.section-about-us .about-us-left .blob-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.section-ready-to-our-professional .our-professional-heading h1 {
+    font-size: 32px;
+    line-height: 36px;
+}
+.section-ready-to-our-professional .our-professional-heading a {
+    margin: 10px 10px 0 0px;
+    font-size: 14px;
+    max-width: 124px;
+    height: 44px;
+    line-height: 44px;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left {
+    width: calc(100% - 0px);
+    margin-bottom: 20px;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right {
+    width: calc(100% - 0px);
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button {
+    margin: 0 0 10px 0;
+}
+.section-our-services .services-thumbnail-container{
+    flex-direction: column-reverse;
+    margin: 30px 0px 0 0;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left, 
+.section-our-services .services-thumbnail-container > .services-thumbnail-right {
+    margin: 0 0px;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-right{
+    margin-bottom: 20px;
+}
+.section-the-gulfway-advantage .gulfway-advantage-heading {
+    margin: 30px 0 0px 0;
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 42px;
+    line-height: 52px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li {
+    margin: 0 0 0 4px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li a {
+    font-size: 12px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li:after {
+    font-size: 14px;
+    margin: 0 0px 0 8px;
+}
+.section-body-content .section-body-row {
+    margin: 0 -10px 0;
+}
+.section-body-content .section-body-row .section-accordion-left {
+    width: calc(42% - 20px);
+    margin: 0 10px;
+}
+.section-body-content .section-body-row .section-accordion-right {
+    width: calc(58% - 20px);
+    margin: 0 10px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content {
+    padding: 25px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb h1 {
+    font-size: 32px;
+    line-height: 38px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb p,
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 4px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
+    margin: 20px -5px 0px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image img {
+    margin: 0 5px;
+    width: calc(33.33333333333333% - 10px);
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list h4 {
+    font-size: 15px;
+    line-height: 24px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list ul li {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 0 25px;
+}
+
+
+
+
+
+
 
 }
 
@@ -3881,6 +4583,59 @@ body{
     top: -50%;
     transform: translate(0%, 75%);
 }
+.section-ready-to-our-professional {
+    height: 190px;
+}
+.section-ready-to-our-professional .our-professional-heading h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.section-ready-to-our-professional .our-professional-heading a {
+    margin: 10px 5px 0 0px;
+    font-size: 12px;
+    max-width: 105px;
+    height: 36px;
+    line-height: 36px;
+}
+.section-footer .footer-row {
+    padding: 0 30px;
+}
+.header-section.next-pages-background {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.nav-button-right .header-nav-menu .menu-btn.menu-next-page {
+    top: 56px;
+}
+.header-nav-menu .wrapper .menu-logo-image {
+    left: 40px;
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 38px;
+    line-height: 40px;
+}
+.section-all-next-pages {
+    padding: 40px 0 0 0;
+}
+.section-welcome-to-gulfway.next-pages-body {
+    transform: translate(0px, 344px);
+}
+.section-body-content {
+    padding: 0 40px;
+}
+.section-body-content .section-body-row .section-accordion-left {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+}
+.section-body-content .section-body-row .section-accordion-right {
+    width: calc(100% - 20px);
+}
+.section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li {
+    width: 100%;
+}
+
+
+
 
 }
 
@@ -3944,6 +4699,125 @@ body{
     left: 30px;
     top: 30px;
 }
+.section-welcome-to-gulfway {
+    transform: translate(0px, 130px);
+}
+.section-welcome-to-gulfway .welcome-container .row {
+    padding: 0 30px;
+}
+.section-about-us .about-us-left,
+.section-about-us .about-us-right {
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+.section-about-us .about-us-right img{
+    display: none;
+}
+.section-welcome-to-gulfway .gulfway-heading {
+    margin: 30px 0 0 0;
+    transform: translate(-33px, 0px);
+}
+.section-welcome-to-gulfway .gulfway-heading h1 {
+    font-size: 80px;
+    line-height: 67px;
+    -webkit-text-stroke-width: 3px;
+}
+.section-welcome-to-gulfway .gulfway-heading h2 {
+    font-size: 30px;
+    line-height: 64px;
+    left: 35px;
+}
+.section-about-us .about-us-left svg {
+    height: 15px;
+}
+.section-ready-to-our-professional {
+    height: 130px;
+}
+.section-ready-to-our-professional .our-professional-heading h1 {
+    font-size: 18px;
+    line-height: 22px;
+}
+.section-ready-to-our-professional .our-professional-heading {
+    width: 62%;
+}
+.section-ready-to-our-professional .our-professional-heading a {
+    margin: 10px 5px 0 0px;
+    font-size: 10px;
+    max-width: 84px;
+    height: 28px;
+    line-height: 28px;
+}
+.section-footer .footer-columns .columns-25 {
+    width: calc(100% - 0px);
+}
+.section-footer .footer-row > .footer-about-us {
+    margin: 0 0px 30px 0;
+}
+.section-footer .container-spriter-line .copyright-spriter-line {
+    margin: 0 30px;
+}
+.section-footer .footer-row > .sitemap-nav-list .div-align-center {
+    margin: 0 0 30px 0;
+    display: inline-block;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header {
+    margin: 0 0px 0px 0;
+    display: block;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button{
+    width: calc(100% - 0px);
+    margin: 0 0 10px 0;
+}
+.section-our-services .accordion-body .inner-services-right {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.section-our-services .accordion-body{
+    display: block;
+}
+.section-our-services .accordion-body .inner-services-right h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.section-our-services .accordion-body .inner-services-right p {
+    text-align: center;
+}
+.section-our-services .accordion-body .inner-services-right a {
+    margin: 30px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb {
+    width: calc(100% - 0px);
+}
+.header-section.next-pages-background {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.nav-button-right .header-nav-menu .menu-btn.menu-next-page {
+    top: 34px;
+}
+.section-all-next-pages .all-next-pages-container h1 {
+    font-size: 30px;
+    line-height: 36px;
+}
+.section-all-next-pages .all-next-pages-container .next-page-breadcrumb ul li a {
+    font-size: 10px;
+}
+.section-welcome-to-gulfway.next-pages-body {
+    transform: translate(0px, 268px);
+}
+.section-body-content {
+    padding: 0 30px;
+}
+.section-all-next-pages .all-next-pages-container {
+    padding: 0 0px;
+}
+
+
+
 
 }
 
