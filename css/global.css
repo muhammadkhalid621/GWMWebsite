@@ -1766,16 +1766,18 @@ body{
     padding: 0;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container{
-    margin: 0;
+    margin: 0 -20px;
     padding: 0;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
     float: left;
-    width: 70%;
+    box-sizing: border-box;
+    width: calc(70% - 40px);
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list{
     margin: 16px 0 0 0;
@@ -1812,9 +1814,10 @@ body{
     margin: 0 0px 0 0px;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 30%;
+    width: calc(30% - 40px);
+    box-sizing: border-box;
     text-align: right;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a{
@@ -1841,17 +1844,27 @@ body{
     margin: 40px 0 0 0;
     padding: 0;
 }
+.portolio-columns{
+    margin: 0 -10px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portolio-columns .columns-25{
+    margin: 0 10px;
+    padding: 0;
+    width: calc(33.33333333333333% - 20px);
+    box-sizing: border-box;
+}
 .section-our-portfolio .our-portfolio-container > .filter-content-thumb .row{
     margin: 0;
     padding: 0;
 }
 .section-our-portfolio .our-portfolio-container .portfolio-main{
-    display: grid;
-    column-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0px;
+    padding: 0;
 }
 .section-our-portfolio .our-portfolio-container .box{
-    /* background: linear-gradient(to right,#1f4037,#99f2c8); */
     background: rgba(0, 0, 0, 0.60);
     font-family: 'DM Sans', sans-serif;
     text-align: center;
@@ -1859,17 +1872,8 @@ body{
     position: relative;
     border-radius: 4px;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0px 20px;
 }
-/*.section-our-portfolio .our-portfolio-container .box .black-layer{
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.60);
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-} */
 .section-our-portfolio .our-portfolio-container .box img{
     width: 100%;
     height: auto;
@@ -1880,7 +1884,6 @@ body{
     opacity: 1;
     transform: scale(1.5);
     transform-origin: left center;
-    /* filter: grayscale(100%); */
 }
 .section-our-portfolio .our-portfolio-container .box .box-content{
     opacity: 1;
@@ -1961,16 +1964,16 @@ body{
     display: table;
 }
 .section-what-our-client .what-our-client{
-    margin: 100px 0 0 0;
+    margin: 100px -20px 0;
     padding: 0;
-    display: flex;
-    column-gap: 20px;
     position: relative;
+    display: flex;
 }
 .section-what-our-client .what-our-client > .what-our-client-left{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 60%;
+    width: calc(60% - 40px);
+    box-sizing: border-box;
 }
 .section-what-our-client .what-our-client > .what-our-client-left h1{
     margin: 0;
@@ -1995,9 +1998,9 @@ body{
     line-height: 32px;
 }
 .section-what-our-client .what-our-client > .what-our-client-right{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 40%;
+    width: calc(40% - 40px);
     border-radius: 4px;
     border: 15px solid #F0F5FF;
     background: transparent;
@@ -2185,7 +2188,7 @@ body{
 }
 .section-what-our-client .what-our-client > .what-our-client-right .owl-buttons{
     position: absolute;
-    left: 0;
+    left: 20px;
     bottom: 0;
 }
 
@@ -2499,7 +2502,7 @@ body{
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.digital-marketing-image,
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image.digital-marketing-image{
-    margin: 0;
+    margin: 0 -10px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.digital-marketing-image p{
     margin: 40px 0 0 0;
@@ -2514,15 +2517,17 @@ body{
     margin: 40px 0 0 0;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container{
-    margin: 0;
+    margin: 0 -10px;
     padding: 0;
     display: flex;
-    column-gap: 25px;
+    flex-wrap: wrap;
+    /* column-gap: 25px; */
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
-    width: 50%;
+    box-sizing: border-box;
+    width: calc(50% - 20px);
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left img{
     margin: 0;
@@ -2532,22 +2537,25 @@ body{
     width: 100%;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-right{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
-    width: 50%;
+    box-sizing: border-box;
+    width: calc(50% - 20px);
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-right .image-display{
-    margin: 0 0 25px 0;
+    margin: 0 -10px 20px;
     padding: 0;
     display: flex;
-    column-gap: 25px;
+    flex-wrap: wrap;
+    /* column-gap: 25px; */
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-right .image-display img{
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     max-width: 100%;
     height: auto;
-    width: 100%;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.youtube-management-service{
     margin: 25px 0 0 0;
@@ -2585,7 +2593,7 @@ body{
 .section-engineering-excellence .engineering-excellence-container .engineering-excellence-row.operational-efficiency-background{
     border-radius: 16px;
     background: rgba(0, 0, 0, 0.02);
-    padding: 50px 50px 20px 50px;
+    padding: 50px 40px 20px 40px;
 }
 .section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content{
     margin: 0 15px 30px;
@@ -2671,18 +2679,19 @@ body{
     transition: all 500ms ease;
 }
 .section-agile-development .agile-development-container .agile-development-row{
-    margin: 0;
+    margin: 0 -15px;
     padding: 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: calc(100% - 0px);
+    /* flex-direction: row;
+    justify-content: space-between; 
+    width: calc(100% - 0px);*/
 }
 .section-agile-development .agile-development-container .agile-development-row > .agile-development-left{
-    margin: 0;
+    margin: 0 15px;
     padding: 0;
-    width: 32%;
+    width: calc(32% - 30px);
+    box-sizing: border-box;
 }
 .section-agile-development .agile-development-container .agile-development-row > .agile-development-left img{
     margin: 0;
@@ -2691,9 +2700,10 @@ body{
     height: auto;
 }
 .section-agile-development .agile-development-container .agile-development-row > .agile-development-right{
-    margin: 0;
-    padding: 0px 40px;
-    width: 68%;
+    margin: 0 15px;
+    padding: 0px 10px;
+    width: calc(68% - 30px);
+    box-sizing: border-box;
 }
 .section-agile-development .agile-development-container .agile-development-row > .agile-development-right h1,
 .section-agile-development .agile-development-container .agile-development-row > .agile-development-right p{
@@ -2741,15 +2751,16 @@ body{
     width: 100%;
 }
 .section-future-ready-products .future-ready-products-container .future-ready-products-row{
-    margin: 0 0 70px 0;
+    margin: 0 -20px 70px 0;
     padding: 0;
     display: flex;
-    column-gap: 40px;
+    flex-wrap: wrap;
+    /* column-gap: 40px; */
 }
 .section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-left{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 40%;
+    width: calc(40% - 40px);
 }
 .section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-left img{
     margin: 0;
@@ -2759,9 +2770,9 @@ body{
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.03);
 }
 .section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right{
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 60%;
+    width: calc(60% - 40px);
 }
 .section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1,
 .section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p{
@@ -3538,6 +3549,32 @@ body{
     font-size: 24px;
     line-height: 36px;
 }
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right h1{
+    font-size: 28px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right p{
+    font-size: 24px;
+    line-height: 36px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1{
+    font-size: 28px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p{
+    font-size: 24px;
+    line-height: 36px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content h1 {
+    font-size: 28px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content p{
+    font-size: 26px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left img {
+    height: 500px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p br{
+    display: none;
+}
 
 
 
@@ -3737,6 +3774,85 @@ body{
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a span {
     padding-left: 10px;
 }
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head {
+    padding: 20px 0 15px 0;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head h1, 
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p {
+    font-size: 26px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p {
+    font-size: 22px;
+    line-height: 32px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right h1 {
+    font-size: 26px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right p {
+    font-size: 22px;
+    line-height: 32px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1 {
+    font-size: 26px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p {
+    font-size: 22px;
+    line-height: 32px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content h1 {
+    font-size: 26px;
+    padding: 20px 0 0 0;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content p {
+    font-size: 22px;
+    line-height: 32px;
+    padding: 12px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left img {
+    height: 425px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left {
+    width: calc(52% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-right {
+    width: calc(48% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-left h1 {
+    font-size: 42px;
+    line-height: 48px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left p {
+    font-size: 22px;
+    line-height: 32px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p {
+    font-size: 16px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p:after {
+    height: 42px;
+    width: 56px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .rating-star-list ul li i {
+    font-size: 20px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content > .box-content-heading {
+    left: 25px;
+    bottom: 25px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h1 {
+    font-size: 18px;
+    line-height: 32px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content a {
+    margin: 14px 0 0 0;
+    font-size: 14px;
+}
+.section-our-portfolio .our-portfolio-heading p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
 
 
 }
@@ -3916,6 +4032,120 @@ body{
     font-size: 20px;
     right: 3px;
     top: -1px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content{
+    padding: 25px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head h1 {
+    font-size: 24px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p{
+    font-size: 20px;
+    margin: 0;
+    padding: 8px 0 0 0;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head {
+    padding: 15px 0 10px 0;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right h1 {
+    font-size: 24px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right p {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 8px 0 0 0;
+}
+.section-agile-development .agile-development-container {
+    margin: 0 0 25px 0;
+    padding: 25px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1 {
+    font-size: 24px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p {
+    font-size: 20px;
+    line-height: 32px;
+    padding-top: 8px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content h1 {
+    font-size: 24px;
+    padding: 20px 0 0 0;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0 0 0;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row {
+    padding: 40px 40px 20px 40px;
+}
+.section-customer-experience .customer-experience-container {
+    padding: 0 50px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.app-development img {
+    margin: 0 0 30px 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.app-service-develop p{
+    margin: 30px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list {
+    margin: 30px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
+    margin: 30px -10px 0px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.ui-ux-services {
+    margin: 30px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.digital-marketing-image p {
+    margin: 30px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.digital-marketing-thumb img {
+    margin: 30px 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left img {
+    height: 385px;
+}
+.section-our-portfolio .our-portfolio-heading p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
+    font-size: 18px;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a {
+    padding: 14px 25px;
+    font-size: 15px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h1 {
+    font-size: 16px;
+    line-height: 28px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content a i {
+    font-size: 12px;
+    margin: 0 0 0 4px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left h1 {
+    font-size: 38px;
+    line-height: 44px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-prev i, .section-what-our-client .what-our-client > .what-our-client-right .owl-next i {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.section-our-portfolio .our-portfolio-heading p {
+    font-size: 18px;
+    line-height: 28px;
 }
 
 
@@ -4190,6 +4420,173 @@ body{
     width: calc(62% - 30px);
     margin: 0 15px;
 }
+.section-engineering-excellence .engineering-excellence-container {
+    padding: 0 50px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content {
+    padding: 20px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head h1 {
+    font-size: 20px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p {
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 0 0 0;
+    line-height: 28px;
+}
+.nav-button-right .header-nav-menu .menu-btn.menu-next-page {
+    top: 66px;
+}
+.section-agile-development .agile-development-container {
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right h1 {
+    font-size: 20px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right p {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 0 0 0;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right {
+    padding: 0px 0px;
+}
+.section-agile-development {
+    padding: 0 50px;
+}
+.section-future-ready-products .future-ready-products-container {
+    padding: 0 50px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1 {
+    font-size: 20px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 6px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row.operational-efficiency-background {
+    padding: 30px 30px 20px 20px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content h1 {
+    font-size: 20px;
+    padding: 15px 0 0 0;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content p {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 0 0 0;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content {
+    padding: 20px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row {
+    padding: 30px 30px 20px 30px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left img {
+    height: auto;
+}
+.section-our-portfolio .our-portfolio-container {
+    margin: 30px 0 0 0;
+}
+.section-our-portfolio .our-portfolio-heading p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
+    font-size: 16px;
+    margin: 0 50px 0 0px;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a {
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.section-our-portfolio .our-portfolio-container > .filter-content-thumb {
+    margin: 30px 0 0 0;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content > .box-content-heading {
+    left: 20px;
+    bottom: 20px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h1 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h2 {
+    font-size: 12px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content a {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+.section-what-our-client .what-our-client {
+    margin: 60px -20px 0;
+}
+.portolio-columns {
+    margin: 0 -5px;
+}
+.portolio-columns .columns-25 {
+    margin: 0 5px;
+    width: calc(33.33333333333333% - 10px);
+}
+.section-our-portfolio .our-portfolio-container .box {
+    margin: 0 0px 10px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left h1 {
+    font-size: 32px;
+    line-height: 40px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 10px 0 0 0;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial {
+    margin: 20px 20px 60px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .rating-star-list ul li i {
+    font-size: 18px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph {
+    margin: 8px 0 0 0;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p:after {
+    height: 36px;
+    width: 48px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-pagination .owl-page span {
+    width: 10px;
+    height: 10px;
+    margin: 0px 0px 0 6px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left {
+    width: calc(45% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-right {
+    width: calc(55% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .image-container .image-content-right h3{
+    font-size: 14px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-prev i, 
+.section-what-our-client .what-our-client > .what-our-client-right .owl-next i {
+    font-size: 14px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left p br{
+    display: none;
+}
+
+
+
 
 
 
@@ -4359,8 +4756,93 @@ body{
     font-size: 15px;
     line-height: 25px;
 }
-
-
+.section-future-ready-products .future-ready-products-container .future-ready-products-row {
+    margin: 0 -10px 50px 0;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-left {
+    margin: 0 10px;
+    padding: 0;
+    width: calc(35% - 20px);
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right {
+    margin: 0 10px;
+    padding: 0;
+    width: calc(65% - 20px);
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1 {
+    font-size: 18px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 6px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.app-development img {
+    margin: 0 0 20px 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.app-service-develop p {
+    margin: 20px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.ui-ux-services {
+    margin: 20px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.digital-marketing-image p {
+    margin: 20px 0 0 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.digital-marketing-thumb img {
+    margin: 20px 0;
+}
+.section-our-portfolio .our-portfolio-heading {
+    margin: 20px 0 0 0;
+}
+.section-our-portfolio .our-portfolio-heading p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.section-our-portfolio .our-portfolio-container {
+    margin: 20px 0 0 0;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
+    font-size: 14px;
+    margin: 0 45px 0 0px;
+}
+.section-our-portfolio .our-portfolio-container > .filter-content-thumb {
+    margin: 20px 0 0 0;
+}
+.portolio-columns .columns-25 {
+    margin: 0 5px;
+    width: calc(50% - 10px);
+}
+.section-what-our-client .what-our-client > .what-our-client-left h1 {
+    font-size: 26px;
+    line-height: 36px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 6px 0 0 0;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p {
+    font-size: 12px;
+    line-height: 20px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .rating-star-list ul li i {
+    font-size: 16px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph {
+    margin: 5px 0 0 0;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p:after {
+    height: 28px;
+    width: 38px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-prev i, 
+.section-what-our-client .what-our-client > .what-our-client-right .owl-next i {
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
 
 
 
@@ -4509,8 +4991,27 @@ body{
     line-height: 24px;
     margin: 0 0 0 25px;
 }
-
-
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head h1 {
+    font-size: 18px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head p {
+    font-size: 14px;
+    margin: 0;
+    padding: 6px 0 0 0;
+    line-height: 24px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-left,
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right {
+    width: calc(50% - 20px);
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right h1 {
+    font-size: 16px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 6px;
+}
 
 
 
@@ -4633,6 +5134,67 @@ body{
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li {
     width: 100%;
 }
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content{
+    margin: 0 10px 20px;
+    width: calc(100% - 20px);
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right h1 {
+    font-size: 18px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 0 0 0;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-left {
+    width: calc(35% - 20px);
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right{
+    width: calc(65% - 20px);
+}
+.section-future-ready-products .future-ready-products-container {
+    padding: 0 40px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 4px;
+}
+.section-customer-experience .customer-experience-container {
+    padding: 0 40px;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
+    font-size: 14px;
+    margin: 0 24px 0 0px;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.section-what-our-client .what-our-client > .what-our-client-left h1 {
+    font-size: 22px;
+    line-height: 32px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .testimonial {
+    margin: 15px 15px 60px;
+}
+.section-what-our-client .what-our-client > .what-our-client-right {
+    border: 10px solid #F0F5FF;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content > .box-content-heading {
+    left: 15px;
+    bottom: 15px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h1 {
+    font-size: 13px;
+    line-height: 22px;
+}
+.section-our-portfolio .our-portfolio-container .box .box-content h2 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
 
 
 
@@ -4815,7 +5377,82 @@ body{
 .section-all-next-pages .all-next-pages-container {
     padding: 0 0px;
 }
-
+.section-agile-development {
+    padding: 0 30px;
+}
+.section-engineering-excellence .engineering-excellence-container {
+    padding: 0 30px;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content {
+    margin: 0 10px 20px;
+    width: calc(100% - 20px);
+    
+}
+.section-agile-development .agile-development-container .agile-development-row {
+    margin: 0 0px;
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-left {
+    margin: 0 0px;
+    width: calc(100% - 0px);
+}
+.section-agile-development .agile-development-container .agile-development-row > .agile-development-right {
+    margin: 20px 0px;
+    padding: 0px 0px;
+    width: calc(100% - 0px);
+}
+.section-future-ready-products .future-ready-products-container {
+    padding: 0 30px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-left,
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right {
+    width: calc(100% - 0px);
+    margin: 0;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row {
+    margin: 0 0px 30px 0;
+    border: 1px solid #E6E8EC;
+    padding: 15px;
+    border-radius: 10px;
+}
+.section-future-ready-products .future-ready-products-container .future-ready-products-row > .future-ready-products-right{
+    margin: 15px 0 15px 0;
+}
+.section-engineering-excellence .engineering-excellence-container .engineering-excellence-row.operational-efficiency-background {
+    padding: 25px 15px 20px 15px;
+}
+.section-customer-experience .customer-experience-container {
+    padding: 0 30px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row {
+    padding: 15px 15px 15px 15px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content {
+    padding: 15px;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content h1 {
+    font-size: 15px;
+    padding: 12px 0 0 0;
+}
+.section-customer-experience .customer-experience-container .customer-experience-row > .customer-experience-content p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 0 0 0;
+}
+.section-our-portfolio .our-portfolio-heading p br{
+    display: none;
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left {
+    width: calc(100% - 40px);
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a{
+    display: none;
+}
+.portolio-columns .columns-25 {
+    width: calc(100% - 10px);
+}
+.section-what-our-client .what-our-client {
+    margin: 50px -20px 0;
+}
 
 
 
