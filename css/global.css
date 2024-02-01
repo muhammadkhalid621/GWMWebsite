@@ -1968,6 +1968,7 @@ body{
     padding: 0;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
 }
 .section-what-our-client .what-our-client > .what-our-client-left{
     margin: 0 20px;
@@ -3575,8 +3576,19 @@ body{
 .section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .client-paragraph p br{
     display: none;
 }
+.section-contact-us-form #progressbar li:before {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0px;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    transform: translate(70px, 0px);
 
-
+}
 
 
 
@@ -3851,6 +3863,25 @@ body{
     font-size: 22px;
     line-height: 32px;
 }
+.section-welcome-to-gulfway .lets-quickly-get-information h3 {
+    font-size: 32px;
+    line-height: 36px;
+}
+.section-contact-us-form #progressbar li:before {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0px;
+    font-size: 18px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 75px;
+    height: 4px;
+    transform: translate(60px, 0px);
+    top: 25px;
+}
+
 
 
 
@@ -4147,6 +4178,111 @@ body{
     font-size: 18px;
     line-height: 28px;
 }
+.section-welcome-to-gulfway .lets-quickly-get-information {
+    margin: 20px 0 0 0;
+}
+.section-welcome-to-gulfway .lets-quickly-get-information h3 {
+    font-size: 28px;
+    line-height: 34px;
+}
+.section-welcome-to-gulfway .lets-quickly-form {
+    margin: 50px 0 30px 0;
+    padding: 40px;
+}
+.section-welcome-to-gulfway .lets-quickly-form h4 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    line-height: 34px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields {
+    margin: 0px 0 25px 0;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields label {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input, 
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea, 
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields select {
+    padding: 0 20px;
+    font-size: 16px;
+    height: 56px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea{
+    height: 120px;
+    padding-top: 10px !important;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields button {
+    font-size: 16px;
+    height: 56px;
+}
+.section-welcome-to-gulfway .gulfway-list-nav ul li a {
+    font-size: 15px;
+    height: 54px;
+    line-height: 54px;
+}
+.section-contact-us-form {
+    margin: 40px 0 0 0;
+    padding: 40px;
+}
+.section-contact-us-form #msform {
+    margin-top: 0px;
+}
+.section-contact-us-form #progressbar li:before {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0px;
+    font-size: 16px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 65px;
+    height: 4px;
+    transform: translate(55px, 0px);
+    top: 20px;
+}
+.section-contact-us-form #progressbar li {
+    margin-bottom: 20px;
+}
+.section-contact-us-form #progressbar {
+    margin: 0 0 30px 0;
+}
+.section-contact-us-form .project-quote-head > .form-card {
+    margin-bottom: 40px;
+}
+.section-contact-us-form .project-quote-head > .form-card h2, 
+.section-contact-us-form .project-quote-head > .form-card h3 {
+    font-size: 24px;
+    line-height: 34px;
+}
+.section-contact-us-form .project-quote-head > .form-card p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field label {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+.section-contact-us-form #msform input,
+.section-contact-us-form #msform select {
+    padding: 0 20px;
+    font-size: 16px;
+    height: 56px;
+    border-radius: 8px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
+    margin: 0 0 30px 0;
+}
+.section-contact-us-form #msform .action-button,
+.section-contact-us-form #msform .action-button-previous {
+    width: 140px;
+    height: 56px;
+    margin: 25px 0 0 0;
+}
+
+
+
 
 
 }
@@ -4584,6 +4720,108 @@ body{
 .section-what-our-client .what-our-client > .what-our-client-left p br{
     display: none;
 }
+.section-welcome-to-gulfway .lets-quickly-get-information h3 {
+    font-size: 24px;
+    line-height: 34px;
+}
+.section-welcome-to-gulfway .lets-quickly-form {
+    margin: 40px 0 30px 0;
+    padding: 34px;
+}
+.section-welcome-to-gulfway .lets-quickly-form h4 {
+    margin: 0 0 30px 0;
+    font-size: 22px;
+    line-height: 30px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input, 
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea, 
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields select {
+    padding: 0 20px;
+    font-size: 14px;
+    height: 50px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields label {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields {
+    margin: 0px 0 20px 0;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields button {
+    font-size: 14px;
+    height: 50px;
+}
+.section-welcome-to-gulfway .gulfway-list-nav ul li a {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+}
+.section-contact-us-form {
+    margin: 30px 0 0 0;
+    padding: 34px;
+}
+.section-contact-us-form #progressbar li:before {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px;
+    font-size: 14px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    transform: translate(45px, 0px);
+    top: 18px;
+}
+.section-contact-us-form .project-quote-head > .form-card h2, 
+.section-contact-us-form .project-quote-head > .form-card h3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+.section-contact-us-form #progressbar li {
+    margin-bottom: 15px;
+}
+.section-contact-us-form #progressbar {
+    margin: 0 0 25px 0;
+}
+.section-contact-us-form .project-quote-head > .form-card {
+    margin-bottom: 30px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field label {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+.section-contact-us-form #msform input, .section-contact-us-form #msform select {
+    padding: 0 15px;
+    font-size: 14px;
+    height: 50px;
+    border-radius: 6px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
+    margin: 0 0 20px 0;
+}
+.section-contact-us-form #msform select {
+    background-size: 14px;
+    background-position: center right 20px;
+}
+.section-contact-us-form #msform .action-button, 
+.section-contact-us-form #msform .action-button-previous {
+    width: 130px;
+    height: 50px;
+    margin: 20px 0 0 0;
+}
+.section-contact-us-form #msform textarea{
+    padding: 0 20px;
+    font-size: 14px;
+    height: 130px !important;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group label {
+    font-size: 14px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group input:checked + label:after {
+    top: 2px;
+}
 
 
 
@@ -4843,7 +5081,79 @@ body{
     height: 40px;
     line-height: 40px;
 }
-
+.section-welcome-to-gulfway .lets-quickly-get-information h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.section-welcome-to-gulfway .lets-quickly-form {
+    margin: 30px 0 30px 0;
+    padding: 30px;
+}
+.section-welcome-to-gulfway .lets-quickly-form h4 {
+    margin: 0 0 25px 0;
+    font-size: 20px;
+    line-height: 28px;
+}
+.section-contact-us-form {
+    margin: 30px 0 0 0;
+    padding: 28px;
+}
+.section-contact-us-form #progressbar li:before {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px;
+    font-size: 14px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 42px;
+    height: 4px;
+    transform: translate(42px, 0px);
+    top: 15px;
+}
+.section-contact-us-form .project-quote-head > .form-card h2, 
+.section-contact-us-form .project-quote-head > .form-card h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.section-contact-us-form .project-quote-head > .form-card p {
+    margin: 6px 0 0 0;
+    font-size: 14px;
+}
+.section-contact-us-form .project-quote-head > .form-card {
+    margin-bottom: 25px;
+}
+.section-contact-us-form #msform input, .section-contact-us-form #msform select {
+    padding: 0 15px;
+    font-size: 14px;
+    height: 46px;
+    border-radius: 6px;
+}
+.section-contact-us-form #msform .action-button, 
+.section-contact-us-form #msform .action-button-previous {
+    width: 130px;
+    height: 46px;
+    margin: 15px 0 0 0;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group label:before {
+    padding: 8px;
+    margin-right: 8px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group input:checked + label:after {
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    left: 7px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-radio input[type=radio] + .radio-label:before {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-radio label {
+    font-size: 14px;
+}
 
 
 
@@ -5012,6 +5322,71 @@ body{
     line-height: 22px;
     padding-top: 6px;
 }
+.section-contact-us-form {
+    margin: 20px 0 0 0;
+    padding: 24px;
+}
+.section-contact-us-form #progressbar li:before {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0px;
+    font-size: 12px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    transform: translate(30px, 0px);
+    top: 12px;
+}
+.section-contact-us-form #progressbar {
+    margin: 0 0 20px 0;
+}
+.section-contact-us-form .project-quote-head > .form-card {
+    margin-bottom: 20px;
+}
+.section-contact-us-form .project-quote-head > .form-card h2, 
+.section-contact-us-form .project-quote-head > .form-card h3 {
+    font-size: 15px;
+    line-height: 22px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field label {
+    margin: 0 0 6px 0;
+    font-size: 12px;
+}
+.section-contact-us-form #msform input, .section-contact-us-form #msform select {
+    padding: 0 12px;
+    font-size: 12px;
+    height: 42px;
+    border-radius: 5px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
+    margin: 0 0 15px 0;
+}
+.section-contact-us-form #msform select {
+    background-size: 12px;
+    background-position: center right 15px;
+}
+.section-contact-us-form #msform .action-button, 
+.section-contact-us-form #msform .action-button-previous {
+    width: 120px;
+    height: 42px;
+    margin: 12px 0 0 0;
+}
+.section-contact-us-form #msform fieldset {
+    padding-bottom: 0px;
+}
+.section-contact-us-form #msform textarea {
+    padding: 0 15px;
+    font-size: 14px;
+    height: 100px !important;
+    border-radius: 5px;
+    padding-top: 10px !important;
+}
+
+
+
 
 
 
@@ -5168,8 +5543,12 @@ body{
     margin: 0 24px 0 0px;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a {
-    padding: 10px 20px;
+    padding: 0px 25px;
     font-size: 12px;
+    margin: 20px 0 0 0;
+    float: right;
+    height: 44px;
+    line-height: 44px;
 }
 .section-what-our-client .what-our-client > .what-our-client-left h1 {
     font-size: 22px;
@@ -5193,7 +5572,70 @@ body{
     font-size: 12px;
     line-height: 20px;
 }
-
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left {
+    width: calc(100% - 40px);
+}
+.section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right {
+    width: calc(100% - 40px);
+    text-align: right;
+}
+.section-what-our-client .what-our-client > .what-our-client-left {
+    width: calc(100% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-right {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+}
+.section-what-our-client .what-our-client {
+    margin: 30px -20px 0;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-buttons {
+    display: none;
+}
+.section-what-our-client .what-our-client > .what-our-client-left h1 br{
+    display: none;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields {
+    margin: 0px 0 0px 0;
+    flex-wrap: wrap;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+.section-welcome-to-gulfway .lets-quickly-form {
+    margin: 25px 0 25px 0;
+    padding: 25px;
+}
+.section-welcome-to-gulfway .lets-quickly-get-information h3 {
+    font-size: 18px;
+}
+.section-welcome-to-gulfway .lets-quickly-get-information {
+    margin: 10px 0 0 0;
+}
+.section-welcome-to-gulfway .lets-quickly-form h4 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea{
+    height: 100px;
+    padding-top: 15px !important;
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields select {
+    background-size: 12px;
+    background-position: center right 20px;
+}
+.section-welcome-to-gulfway .gulfway-list-nav ul {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0px;
+}
+.section-welcome-to-gulfway .gulfway-list-nav ul li {
+    margin: 0 10px 15px;
+    width: calc(50% - 20px);
+}
 
 
 
@@ -5453,13 +5895,28 @@ body{
 .section-what-our-client .what-our-client {
     margin: 50px -20px 0;
 }
-
-
-
+.section-what-our-client .what-our-client > .what-our-client-left {
+    width: calc(100% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-right {
+    width: calc(100% - 40px);
+}
+.section-what-our-client .what-our-client > .what-our-client-left p {
+    margin: 6px 0 20px 0;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-buttons {
+    display: none;
+}
+.section-what-our-client .what-our-client > .what-our-client-right .owl-pagination .owl-page span {
+    width: 8px;
+    height: 8px;
+    margin: 0px 0px 0 5px;
 }
 
 
 
+
+}
 
 
 
