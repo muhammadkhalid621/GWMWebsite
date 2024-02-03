@@ -111,23 +111,26 @@
               </div>
 
               <div class="our-portfolio-container">
+              
+                
 
                 <div class="show-all-container">
 
                   <div class="our-portfolio-left">
-                    <div class="inner-list">
+                    <div class="inner-list" id="myBtnContainer">
                       <ul>
-                        <li class="active" data-filter="*">Show All</li>
-                        <li data-filter=".design">Design</li>
-                        <li data-filter=".branding">Branding</li>
-                        <li data-filter=".Illustration">Illustration</li>
-                        <li data-filter=".motion">Motion</li>
+                        <li><button class="btn" onclick="filterSelection('all')"> Show all</button></li>
+                        <li><button class="btn" onclick="filterSelection('cars')"> App</button></li>
+                        <li><button class="btn" onclick="filterSelection('animals')"> Card</button></li>
+                        <li><button class="btn" onclick="filterSelection('fruits')"> Icon</button></li>
+                        <li><button class="btn" onclick="filterSelection('colors')"> Logo</button></li>
+                        <li><button class="btn" onclick="filterSelection('Web')"> Web</button></li>
                       </ul>
                     </div>
                   </div>
 
                   <div class="our-portfolio-right">
-                    <a href="#">View All works</a>
+                    <a href="project-detail.html">View All works</a>
                   </div>
 
                 </div>
@@ -136,12 +139,16 @@
                  <div class="row">
                   
                   <div class="portfolio-main">
+                    
                     <div class="portolio-columns">
 
-                      <div class="columns-25">
-                      <div class="box">
+                     <div class="columns-25 filterDiv cars">
+                       <div class="box">
 
-                        <img src="images/filter-image-1.png" title="" alt="">
+                        <div class="image-container">
+                          <img src="images/filter-thumb-image-1.png" title="" alt="">
+                        </div>
+                        
 
                         <div class="box-content all design">
                           
@@ -152,11 +159,10 @@
                           </div>
 
                         </div>
-
+                       </div>
                       </div>
-                      </div>
 
-                      <div class="columns-25">
+                      <div class="columns-25 filterDiv animals">
                         <div class="box">
 
                           <img src="images/filter-image-1.png" title="" alt="">
@@ -174,7 +180,7 @@
                         </div>
                       </div>
 
-                      <div class="columns-25">
+                      <div class="columns-25 filterDiv fruits">
                         <div class="box">
 
                           <img src="images/filter-image-1.png" title="" alt="">
@@ -192,7 +198,7 @@
                         </div>
                       </div>
 
-                      <div class="columns-25">
+                      <div class="columns-25 filterDiv colors">
                         <div class="box">
 
                           <img src="images/filter-image-1.png" title="" alt="">
@@ -210,7 +216,7 @@
                         </div>
                       </div>
 
-                      <div class="columns-25">
+                      <div class="columns-25 filterDiv Web">
                         <div class="box">
 
                           <img src="images/filter-image-1.png" title="" alt="">
@@ -228,7 +234,259 @@
                         </div>
                       </div>
 
-                      <div class="columns-25">
+                      <div class="columns-25 filterDiv cars">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv animals">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv fruits">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv colors">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv Web">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv Web">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv fruits">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv fruits">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv animals">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv fruits">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv colors">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv Web">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv Web">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv fruits">
+                        <div class="box">
+
+                          <img src="images/filter-image-1.png" title="" alt="">
+    
+                          <div class="box-content all design">
+                            
+                            <div class="box-content-heading">
+                              <h1>Cyber Security Services</h1>
+                              <h2>Branding, Design, Product, Development</h2>
+                              <a href="#">View Case Study <i class="icon-arrow-right"></i></a>
+                            </div>
+    
+                          </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="columns-25 filterDiv fruits">
                         <div class="box">
 
                           <img src="images/filter-image-1.png" title="" alt="">
@@ -247,7 +505,9 @@
                       </div>
 
                    </div>
+
                   </div>
+
                  </div>
                 </div>
 
@@ -486,9 +746,6 @@
             </div>
 
             <div class="container-copyright"><p>© 2020 Gulfway All rights reserved.</p></div>
-            
-
-
 
           </div>
   
@@ -509,7 +766,6 @@
 
     <script src="owl-carousel/jquery-1.9.1.js"></script>
     <script src="owl-carousel/owl.carousel.js"></script>
-
     <script>
       $(document).ready(function(){
           $("#testimonial-slider").owlCarousel({
@@ -525,6 +781,52 @@
           });
       });
     </script>
+
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+  
     
   </body>
 </html>

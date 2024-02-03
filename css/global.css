@@ -1873,10 +1873,21 @@ body{
     border-radius: 4px;
     width: 100%;
     margin: 0 0px 20px;
+    animation-duration: .3s;
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+.section-our-portfolio .our-portfolio-container .box .image-container{
+    overflow: hidden;
+    width: 100%;
+    height: 368px;
+    min-height: 368px;
+    width: 100%;
 }
 .section-our-portfolio .our-portfolio-container .box img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.8s ease 0s;
     border-radius: 4px;
 }
@@ -3051,7 +3062,8 @@ body{
 .section-contact-us-form{
     margin: 50px 0 0 0;
     padding: 50px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: transparent;
     border: 1px solid #E6E8EC;
     border-radius: 10px;
     box-shadow: 0px 5px 12px 0px rgba(8, 15, 52, 0.03);
@@ -3062,7 +3074,8 @@ body{
     margin-top: 20px;
 }
 .section-contact-us-form #msform fieldset {
-    background: white;
+    /* background: white; */
+    background: transparent;
     border: 0 none;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -3082,7 +3095,8 @@ body{
 .section-contact-us-form #msform select {
     margin: 0;
     padding: 0 25px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: transparent;
     border: 1px solid #E6E8EC;
     border-radius: 0;
     outline: none;
@@ -3320,16 +3334,18 @@ body{
     padding: 0;
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row{
-    margin: 0;
+    margin: 0 -10px;
     padding: 0;
     width: 100%;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field{
-    margin: 0 0 40px 0;
+    margin: 0 10px 40px;
     padding: 0;
-    width: 50%;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field.additional-comments{
     width: 100%;
@@ -3352,7 +3368,8 @@ body{
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group {
     display: block;
-    margin-bottom: 40px;
+    margin: 0 10px 40px;
+    /* margin-bottom: 40px; */
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group input {
     padding: 0;
@@ -3457,6 +3474,48 @@ body{
 }
 
 /* Our Portfolio + Web Development Page CSS End */
+
+.filterDiv {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.our-portfolio-left .btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #000000;
+}
+.our-portfolio-left .btn:hover {
+    background: none;
+}
+.our-portfolio-left .btn.active {
+    color: #5B93C7;
+}
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
 
 
 /* All Page Responsive Media Queries For All Devices CSS Start */
@@ -4168,7 +4227,8 @@ body{
     font-size: 18px;
     line-height: 28px;
 }
-.section-what-our-client .what-our-client > .what-our-client-right .owl-prev i, .section-what-our-client .what-our-client > .what-our-client-right .owl-next i {
+.section-what-our-client .what-our-client > .what-our-client-right .owl-prev i, 
+.section-what-our-client .what-our-client > .what-our-client-right .owl-next i {
     font-size: 16px;
     width: 50px;
     height: 50px;
@@ -4272,7 +4332,7 @@ body{
     border-radius: 8px;
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
 }
 .section-contact-us-form #msform .action-button,
 .section-contact-us-form #msform .action-button-previous {
@@ -4799,7 +4859,8 @@ body{
     border-radius: 6px;
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
-    margin: 0 0 20px 0;
+    /* margin: 0 0 20px 0; */
+    margin-bottom: 20px;
 }
 .section-contact-us-form #msform select {
     background-size: 14px;
@@ -5362,7 +5423,8 @@ body{
     border-radius: 5px;
 }
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
-    margin: 0 0 15px 0;
+    /* margin: 0 0 15px 0; */
+    margin-bottom: 15px;
 }
 .section-contact-us-form #msform select {
     background-size: 12px;
@@ -5384,6 +5446,9 @@ body{
     border-radius: 5px;
     padding-top: 10px !important;
 }
+
+
+
 
 
 
@@ -5636,6 +5701,23 @@ body{
     margin: 0 10px 15px;
     width: calc(50% - 20px);
 }
+.section-contact-us-form #progressbar li:before {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px;
+    font-size: 10px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 18px;
+    height: 4px;
+    transform: translate(24px, 0px);
+    top: 9px;
+}
+
+
+
 
 
 
@@ -5911,6 +5993,40 @@ body{
     width: 8px;
     height: 8px;
     margin: 0px 0px 0 5px;
+}
+.section-contact-us-form #progressbar li{
+    width: 30%;
+}
+.section-contact-us-form #progressbar li:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px;
+    font-size: 12px !important;
+}
+.section-contact-us-form #progressbar li:after {
+    content: "";
+    width: 24px;
+    height: 4px;
+    transform: translate(36px, 0px);
+    top: 14px;
+}
+.section-contact-us-form {
+    margin: 15px 0 0 0;
+    padding: 15px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row {
+    margin: 0 -10px;
+}
+.section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .contact-us-field {
+    margin: 0 0px 15px 10px;
+    width: calc(100% - 0px);
+}
+.section-contact-us-form #msform .action-button, 
+.section-contact-us-form #msform .action-button-previous {
+    width: 100px;
+    height: 36px;
+    margin: 6px 0 0 0;
 }
 
 
