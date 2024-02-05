@@ -40,7 +40,6 @@ body{
 } */
 
 /* Landing Page and Navigation Menu CSS Start */
-
 .header-section{
     margin: 0;
     padding: 0;
@@ -86,7 +85,7 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    height: auto;
+    height: 100px;
 }
 .header-inner-colum .nav-button-right{
     margin: 0;
@@ -126,7 +125,7 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    height: auto;
+    height: 100px;
 }
 .header-nav-menu #active:checked ~ .wrapper {
     /*left: 0;*/
@@ -290,13 +289,12 @@ body{
     padding: 0;
     width: 100%;
     position: absolute;
-    /* z-index: 9; */
     left: 50%;
     top: 50%;
-    -moz-transform: translate(-50%, -50%); /* Firefox */
-    -ms-transform: translate(-50%, -50%);  /* IE 9 */
-    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
-    -o-transform: translate(-50%, -50%); /* Opera */
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .section-banner .row{
@@ -691,7 +689,8 @@ body{
     margin: 70px 0 40px 0;
     padding: 48px;
     border: 8px solid #FBFBFB;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: transparent;
 }
 .section-welcome-to-gulfway .lets-quickly-form h4{
     margin: 0 0 40px 0;
@@ -740,7 +739,8 @@ body{
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields select{
     margin: 0;
     padding: 0 25px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: transparent;
     border: 1px solid #E6E8EC;
     border-radius: 0;
     outline: none;

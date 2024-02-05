@@ -6,20 +6,146 @@
     <title>GulfWay (Marketing)</title>
     <link href="css/global.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/star-interactive.css" rel="stylesheet" />
+    <link href="css/star-interactive.css" rel="stylesheet" id="starsBgForHome" />
+    <!-- <link href="css/star-interactive-next.css" rel="stylesheet" id="starsBgForWelcome" /> -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
 
-     <div class="page-wrapper">
+     <div class="page-wrapper" id="contentForHome">
 
       <div class="canvas-effect">
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas" height="100vh"></canvas>
+      </div>
+      
+        <header class="header-section">
+
+          <div class="header-container">
+            <div class="row">
+
+              <div class="header-inner-colum">
+
+                <div class="logo-image-left">
+                  <a href="index.html"><img src="images/main-logo.svg" alt="" title="" /></a>
+                </div>
+
+                <div class="nav-button-right">
+                  <div class="header-nav-menu">
+
+                    <input type="checkbox" id="active">
+                    <label for="active" class="menu-btn"><span></span></label>
+                    <label for="active" class="close"></label>
+
+                    <div class="wrapper">
+
+                      <div class="menu-logo-image">
+                        <a href="index.html"><img src="images/main-logo.svg" alt="" title="" /></a>
+                      </div>
+
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-services.html">Our Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                      </ul>
+
+                      <div class="section-bottom-container">
+                        <div class="row">
+                
+                        <div class="section-bottom-arrow menu-nav-bottom">
+                          <a href="#">
+                            <div class="change-section menu-btm-rotate">
+                              <div class="chevron"></div>
+                              <div class="chevron"></div>
+                              <div class="chevron"></div>
+                            </div>
+                          </a>
+                          </div>
+                
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                
+
+              </div>
+
+            </div>
+          </div>       
+
+        </header>
+
+        <div class="section-banner">
+          <div class="row">
+
+            <div class="why-choose-us-head">
+              <div>
+                <button class="blob-btn">
+                  Why Choose Us
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+
+              <h1>Start Your Web Business<br /> Journey With Our Great Team</h1>
+              <p>Proudly serving the world's top asset finance & leasing companies with smart software<br /> technology for over four decades.</p>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-bottom-container">
+        <div class="row">
+
+          <div class="section-bottom-arrow" onclick="handleToggleOfPageViews()">
+            <a href="#">
+            <div class="change-section">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+            </a>
+          </div>
+
+        </div>
+        </div>
+
+     </div>
+
+
+     <div class="page-wrapper d-none" id="contentForWelcome" >
+
+      <div class="canvas-effect">
+       <canvas id="canvas"></canvas>
       </div>
 
-      <header class="header-section">
+      <div class="page-fixed">
+
+       <header class="header-section">
 
         <div class="header-container">
           <div class="row">
@@ -31,7 +157,7 @@
               </div>
 
               <div class="nav-button-right">
-                <div class="header-nav-menu">
+                <div class="header-nav-menu next-page-nav">
 
                   <input type="checkbox" id="active">
                   <label for="active" class="menu-btn"><span></span></label>
@@ -72,94 +198,172 @@
                 </div>
               </div>
 
-              
-
             </div>
 
           </div>
         </div>        
 
-      </header>
+       </header>
 
-      <div class="section-banner">
-        <div class="row">
+       <div class="section-welcome-to-gulfway">
+        <div class="welcome-container">
+          <div class="row">
 
-          <div class="why-choose-us-head">
-            <div>
-              <button class="blob-btn">
-                Why Choose Us
-                <span class="blob-btn__inner">
-                  <span class="blob-btn__blobs">
-                    <span class="blob-btn__blob"></span>
-                    <span class="blob-btn__blob"></span>
-                    <span class="blob-btn__blob"></span>
-                    <span class="blob-btn__blob"></span>
-                  </span>
-                </span>
-              </button>
-
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
+            <div class="breadcrumb-list">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="welcome-to-gulfway.html">Welcome to Gulfway</a></li>
+              </ul>
             </div>
 
-            <h1>Start Your Web Business<br /> Journey With Our Great Team</h1>
-            <p>Proudly serving the world's top asset finance & leasing companies with smart software<br /> technology for over four decades.</p>
+            <div class="gulfway-heading">
+              <h1>gwm</h1>
+              <h2>Welcome to gulfway</h2>
+            </div>
+
+            <div class="lets-quickly-get-information">
+              <h3>Lets quickly get to the information you require.</h3>
+            </div>
+
+            <div class="lets-quickly-form">
+              <h4>Write down your quote here...</h4>
+
+              <form>
+
+              <div class="row-form-fields">
+
+                <div class="lets-form-fields">
+                  <label>Full Name</label>
+                  <input type="text" id="" name="" placeholder="Full Name" />
+                </div>
+
+                <div class="lets-form-fields">
+                  <label>Email Address</label>
+                  <input type="text" id="" name="" placeholder="Email Address" />
+                </div>
+
+              </div>
+
+              <div class="row-form-fields">
+
+                <div class="lets-form-fields company-name">
+                  <label>Company Name</label>
+                  <input type="text" id="" name="" placeholder="Brand/Company/Product Name" />
+                </div>
+
+              </div>
+
+              <div class="row-form-fields">
+
+                <div class="lets-form-fields">
+                  <label>Our Services</label>
+                  <select id="" name="">
+                    <option>What are looking for:</option>
+                    <option>What are looking for:</option>
+                    <option>What are looking for:</option>
+                    <option>What are looking for:</option>
+                  </select>
+                </div>
+
+                <div class="lets-form-fields">
+                  <label>Budget</label>
+                  <select id="" name="">
+                    <option>Project budget (USD)</option>
+                    <option>5000 - 10,000 (USD)</option>
+                    <option>15,000 - 20,000 (USD)</option>
+                    <option>25,000 - 30,000 (USD)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="row-form-fields">
+
+                <div class="lets-form-fields company-name">
+                  <label>Message</label>
+                  <textarea name="" id="" placeholder="Tell us about your project..."></textarea>
+                </div>
+
+              </div>
+
+              <div class="row-form-fields qoute-button">
+
+                <div class="lets-form-fields company-name">
+                  <button type="submit"><span>Request a quote</span></button>
+                </div>
+
+              </div>
+
+             </form>
+            </div>
+
+            <div class="gulfway-list-nav">
+              <ul>
+                <li><a href="about-us.html">About Gulfway</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="our-services.html">Our Services</a></li>
+                <li><a href="portfolio.html">Our Portfolio</a></li>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
 
           </div>
-
         </div>
-      </div>
-
-      <div class="section-bottom-container">
-       <div class="row">
-
-        <div class="section-bottom-arrow">
-          <a href="#">
-           <div class="change-section">
-             <div class="chevron"></div>
-             <div class="chevron"></div>
-             <div class="chevron"></div>
-           </div>
-          </a>
-         </div>
-
        </div>
+
       </div>
 
      </div>
-
-
-
-
-
-
-
-
-
 
      
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dat.gui/build/dat.gui.min.js" type="text/javascript"></script>
     <script src="js/star-interactive.js"></script>
+    <!-- <script src="js/star-interactive-next.js"></script> -->
     <script src="js/jquery-3.7.1.js"></script>
     
     <script>
-      $(function() {
-        $('a[href*=#]').on('click', function(e) {
-          e.preventDefault();
-          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-        });
-      });
+      function handleToggleOfPageViews(){
+        const contentForHome =  document.getElementById('contentForHome');
+        const linkForHome = document.getElementById('starsBgForHome');
+        const contentForWelcome =  document.getElementById('contentForWelcome');
+        if(contentForHome){
+          contentForHome.classList.add('#')
+          if(linkForHome){
+            setTimeout(() => {
+              contentForHome.remove();
+              linkForHome.remove();
+            },);
+          }
+        }
+        if(contentForWelcome){
+          contentForWelcome.classList.remove('d-none');
+          contentForWelcome.classList.add('d-flex');
+          contentForWelcome.classList.add('#')
+          contentForWelcome.classList.add('show')
+        }
+
+        const starBgWelcomeLink = document.createElement('link');
+        
+        starBgWelcomeLink.rel = 'stylesheet';
+        
+        starBgWelcomeLink.href = 'css/star-interactive-next.css';
+        
+        
+        const starBgWelcomeScript = document.createElement('script');
+        
+        starBgWelcomeScript.src = 'js/star-interactive-next.js';
+       
+        setTimeout(() => {
+          document.head.appendChild(starBgWelcomeLink);
+          document.head.appendChild(starBgWelcomeScript);
+          
+        },);
+        
+      
+      }
     </script>
 
-
-    
   </body>
 </html>
