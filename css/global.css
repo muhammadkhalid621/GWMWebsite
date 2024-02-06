@@ -1335,7 +1335,7 @@ body{
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:before{
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-button:before{
     font-family: 'fontello';
     font-size: 14px;
     content: '\e801';
@@ -1348,14 +1348,20 @@ body{
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:hover,
-.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button.active{
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:hover{
     background: #5B93C7;
     border: 1px solid #5B93C7;
     color: #ffffff;
 }
-.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:hover:before,
-.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button.active:before{
+.accordion-button:not(.collapsed){
+    background: #5B93C7 !important;
+    border: 1px solid #5B93C7 !important;
+    color: #ffffff !important;
+}
+.accordion-button:not(.collapsed):before{
+    color: #ffffff !important;
+}
+.section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button:hover:before{
     color: #ffffff;
 }
 .section-our-services .services-thumbnail-container > .services-thumbnail-right{
@@ -1370,6 +1376,7 @@ body{
     box-shadow: 0px 12px 30px 0px rgba(6, 28, 61, 0.02);
     display: flex;
     column-gap: 30px;
+    height: 360px;
 }
 .section-our-services .accordion-body .inner-services-left{
     margin: 0;
@@ -1401,6 +1408,11 @@ body{
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+.section-our-services .accordion-body .inner-services-left .services-icons i.icon-youtube{
+    font-size: 40px;
+    position: relative;
+    left: -5px;
 }
 .section-our-services .accordion-body .inner-services-right{
     margin: 0;
@@ -3045,6 +3057,21 @@ body{
     padding: 0;
     text-align: left;
     text-decoration: none;
+}
+.section-project-detail .project-detail-container .image-container-project{
+    overflow: hidden;
+    height: 300px;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 16px;
+    margin: 0;
+    padding: 0;
+}
+.section-project-detail .project-detail-container .image-container-project img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 16px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image{
     margin: 40px 0 0 0;
