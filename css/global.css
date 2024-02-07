@@ -1409,7 +1409,8 @@ body{
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-.section-our-services .accordion-body .inner-services-left .services-icons i.icon-youtube{
+.section-our-services .accordion-body .inner-services-left .services-icons i.icon-youtube,
+.section-our-services .accordion-body .inner-services-left .services-icons i.icon-media-and-production{
     font-size: 40px;
     position: relative;
     left: -5px;
@@ -1554,6 +1555,11 @@ body{
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon i.icon-devops{
+    font-size: 44px;
+    position: relative;
+    left: -10px;
 }
 .section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb:hover .gulf-services-icon{
     background: #5B93C7;
@@ -2303,6 +2309,20 @@ body{
     margin: 0;
     padding: 0 80px;
 }
+.section-body-content .image-size-container{
+    overflow: hidden;
+    height: 300px;
+    min-height: 300px;
+    border-radius: 16px;
+    margin: 0 10px;
+    padding: 0;
+}
+.section-body-content .image-size-container img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 16px;
+}
 .section-body-content .section-body-row{
     margin: 0 -20px 0;
     padding: 0;
@@ -2552,6 +2572,21 @@ body{
     padding: 0;
     box-sizing: border-box;
     width: calc(50% - 20px);
+}
+.section-body-content .section-body-row .section-accordion-right .imageSize-Container{
+    overflow: hidden;
+    height: 500px;
+    border-radius: 16px;
+    margin: 0 10px;
+    padding: 0;
+}
+.section-body-content .section-body-row .section-accordion-right .imageSize-Container.imageheight{
+    height: 200px;
+}
+.section-body-content .section-body-row .section-accordion-right .imageSize-Container img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-left img{
     margin: 0;
@@ -2906,15 +2941,16 @@ body{
     width: 100%;
 }
 .section-project-detail .project-detail-container .project-detail-row{
-    margin: 0;
+    margin: 0 -20px;
     padding: 0;
+    flex-wrap: wrap;
     display: flex;
-    column-gap: 45px;
+    /* column-gap: 45px; */
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-left{
-    margin: 0;
+    margin: 0 20px;
     padding: 0px;
-    width: 30%;
+    width: calc(30% - 40px);
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-left .detail-background{
     margin: 0;
@@ -3019,9 +3055,9 @@ body{
     color: #ffffff;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right{
-    margin: 0;
+    margin: 0 20px;
     padding: 50px;
-    width: 70%;
+    width: calc(70% - 40px);
     border-radius: 16px;
     background: rgba(0, 0, 0, 0.02);
 }
@@ -3967,7 +4003,47 @@ body{
     transform: translate(60px, 0px);
     top: 25px;
 }
-
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .detail-background {
+    padding: 30px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list h4 {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    line-height: 32px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list ul li {
+    font-size: 16px;
+    line-height: 36px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now {
+    margin: 50px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now h5 {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    line-height: 32px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a i {
+    font-size: 16px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head h1 {
+    margin: 0 0 20px 0;
+    font-size: 50px;
+    line-height: 60px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
+    padding: 40px;  
+}
 
 
 
@@ -4367,8 +4443,41 @@ body{
     height: 56px;
     margin: 25px 0 0 0;
 }
-
-
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list h4 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list ul li {
+    font-size: 15px;
+    line-height: 32px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now {
+    margin: 35px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now h5 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head h1 {
+    margin: 0 0 20px 0;
+    font-size: 46px;
+    line-height: 56px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image {
+    margin: 25px 0 0 0;
+}
 
 
 
@@ -4910,6 +5019,55 @@ body{
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-group input:checked + label:after {
     top: 2px;
 }
+.section-project-detail .project-detail-container {
+    padding: 0 50px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list h4 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 24px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list ul li {
+    font-size: 14px;
+    line-height: 30px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now {
+    margin: 25px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now h5 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 24px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a i {
+    font-size: 14px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
+    padding: 30px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head h1 {
+    margin: 0 0 15px 0;
+    font-size: 36px;
+    line-height: 44px;
+}
+.section-project-detail .project-detail-container .image-container-project {
+    height: 200px;
+    min-height: 200px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image {
+    margin: 20px 0 0 0;
+}
+
 
 
 
@@ -5242,6 +5400,54 @@ body{
 .section-contact-us-form .project-quote-head > .contact-us-form-container .contact-us-form-row .form-radio label {
     font-size: 14px;
 }
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left {
+    margin: 0 10px;
+    width: calc(35% - 20px);
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
+    margin: 0 10px;
+    width: calc(65% - 20px);
+    padding: 25px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .detail-background {
+    padding: 25px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list h4 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now h5 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a i {
+    font-size: 12px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    line-height: 40px;
+}
+.section-project-detail .project-detail-container .image-container-project {
+    height: 150px;
+    min-height: 150px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head p {
+    margin: 10px 0 0 0;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image {
+    margin: 15px 0 0 0;
+}
+
+
+
 
 
 
@@ -5473,9 +5679,30 @@ body{
     border-radius: 5px;
     padding-top: 10px !important;
 }
-
-
-
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .detail-background {
+    padding: 20px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .project-detail-list ul li {
+    font-size: 12px;
+    line-height: 24px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left {
+    margin: 0 10px;
+    width: calc(40% - 20px);
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
+    margin: 0 10px;
+    width: calc(60% - 20px);
+    padding: 20px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head h1 {
+    font-size: 30px;
+}
 
 
 
@@ -5742,8 +5969,15 @@ body{
     transform: translate(24px, 0px);
     top: 9px;
 }
-
-
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left {
+    margin: 0 10px 30px;
+    width: calc(100% - 20px);
+}
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    padding: 20px;
+}
 
 
 
@@ -6055,6 +6289,15 @@ body{
     height: 36px;
     margin: 6px 0 0 0;
 }
+.section-project-detail .project-detail-container {
+    padding: 0 30px;
+}
+.section-project-detail .project-detail-container .image-container-project {
+    height: 100px;
+    min-height: 100px;
+}
+
+
 
 
 
