@@ -875,14 +875,15 @@ body{
 /* About Us CSS Start */
 
 .section-about-us{
-    margin: 0;
+    margin: 0 0px;
     padding: 0;
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 .section-about-us .about-us-left{
-    margin: 50px 0 0 0;
-    padding: 0;
+    margin: 50px 0px;
+    padding: 0 0 0 80px;
     width: 55%;
 }
 .section-about-us .about-us-left h1{
@@ -1017,18 +1018,104 @@ body{
 }
 }
 .section-about-us .about-us-right{
-    margin: 50px 0 0 0;
+    margin: 50px 0px;
     padding: 0;
-    position: absolute;
-    right: 0;
-    transform: translate(0px, 0px);
     width: 45%;
+    /*position: absolute;
+    right: 0;
+    transform: translate(0, 0px);*/
 }
 .section-about-us .about-us-right img{
     margin: 0;
     padding: 0;
     max-width: 100%;
     height: auto;
+    float: right;
+}
+.about-us-thumbnail-container{
+    margin: 0;
+    padding: 0;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail{
+    margin: 70px 0px 0;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box{
+    margin: 0 10px;
+    padding: 30px 20px;
+    border-radius: 4px;
+    border: 1px solid #F2F3F5;
+    background: transparent;
+    box-shadow: 0px 12px 50px 0px rgba(6, 28, 61, 0.03);
+    box-sizing: border-box;
+    width: calc(25% - 20px);
+    text-align: center;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon{
+    margin: 0 auto;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 12px 30px 0px rgba(6, 28, 61, 0.02);
+    border-radius: 4px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i{
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    color: #5B93C7;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-end-to-end-solutions{
+    margin-left: -6px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-innovation-and-creativity,
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-collaborative-partnership,
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-transform-your-digital{
+    font-size: 40px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box h3{
+    margin: 15px 0 0 0;
+    padding: 0;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box p{
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #616161;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box:hover .about-us-icon{
+    background-color: #5B93C7;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box:hover .about-us-icon i{
+    color: #ffffff;
 }
 
 
@@ -1037,6 +1124,7 @@ body{
 
 
 /* Ready To Get Our Professional IT Services CSS Start */
+
 .main-footer{
     margin: 200px 0 0 0;
     padding: 0;
@@ -3727,6 +3815,15 @@ body{
     transform: translate(70px, 0px);
 
 }
+.section-about-us .about-us-left h1 {
+    font-size: 42px;
+    line-height: 52px;
+}
+.section-about-us .about-us-left p {
+    font-size: 22px;
+}
+
+
 
 
 
@@ -4060,7 +4157,10 @@ body{
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
     padding: 40px;  
 }
-
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box {
+    margin: 0 10px 20px;
+    width: calc(50% - 20px);
+}
 
 
 
@@ -4513,10 +4613,37 @@ body{
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i.content-marketing {
     font-size: 24px;
 }
-
-
-
-
+.section-about-us .about-us-left {
+    padding: 0 0 0 50px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box {
+    margin: 0 5px 0px;
+    width: calc(25% - 10px);
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box h3 {
+    margin: 12px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box p {
+    font-size: 14px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i {
+    font-size: 26px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-innovation-and-creativity,
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-collaborative-partnership,
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box .about-us-icon i.icon-transform-your-digital {
+    font-size: 32px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail {
+    padding: 0 50px;
+}
 
 
 
@@ -5122,6 +5249,16 @@ body{
     height: 150px;
     min-height: 150px;
 }
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box {
+    margin: 0 5px 10px;
+    width: calc(50% - 10px);
+}
+.about-us-thumbnail-container .row-about-us-thumbnail {
+    margin: 50px 0px 0;
+    padding: 0 50px;
+}
+
+
 
 
 
@@ -6356,6 +6493,17 @@ body{
 .section-project-detail .project-detail-container .image-container-project {
     height: 100px;
     min-height: 100px;
+}
+.section-about-us .about-us-left {
+    padding: 0 30px 0 30px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail {
+    margin: 30px 0px 0;
+    padding: 0 30px;
+}
+.about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box {
+    margin: 0 0px 20px;
+    width: calc(100% - 0px);
 }
 
 
