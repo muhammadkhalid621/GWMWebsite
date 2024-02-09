@@ -2839,6 +2839,8 @@ body{
     max-width: 100%;
     height: 584px;
     width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .youtube-management-container .youtube-management-right{
     margin: 0 10px;
@@ -2860,6 +2862,9 @@ body{
     height: auto;
     width: calc(50% - 20px);
     box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 16px;
+    height: 200px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.youtube-management-service{
     margin: 25px 0 0 0;
