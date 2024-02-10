@@ -58,7 +58,7 @@
                       <div class="row">
                
                        <div class="section-bottom-arrow menu-nav-bottom">
-                         <a href="#">
+                         <a href="index.html">
                           <div class="change-section menu-btm-rotate">
                             <div class="chevron"></div>
                             <div class="chevron"></div>
@@ -424,28 +424,6 @@
 
                     </fieldset>
 
-                    <!-- <fieldset>
-                      <div class="form-card">
-                        <div class="row">
-                          <div class="col-7">
-                            <h2 class="fs-title">Finish:</h2>
-                          </div>
-                          <div class="col-5">
-                            <h2 class="steps">Step 4 - 4</h2>
-                          </div>
-                        </div> <br><br>
-                        <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                        <div class="row justify-content-center">
-                          <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
-                        </div> <br><br>
-                        <div class="row justify-content-center">
-                          <div class="col-7 text-center">
-                            <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset> -->
-
                   </form>
 
                 </div>
@@ -563,14 +541,14 @@
         opacity = 1 - now;
 
         current_fs.css({
-        'display': 'none',
-        'position': 'relative'
+          'display': 'none',
+          'position': 'relative'
         });
-        next_fs.css({'opacity': opacity});
+          next_fs.css({'opacity': opacity});
         },
-        duration: 500
+          duration: 500
         });
-        setProgressBar(++current);
+          setProgressBar(++current);
         });
 
         $(".previous").click(function(){
@@ -591,25 +569,25 @@
         opacity = 1 - now;
 
         current_fs.css({
-        'display': 'none',
-        'position': 'relative'
+          'display': 'none',
+          'position': 'relative'
         });
         previous_fs.css({'opacity': opacity});
         },
-        duration: 500
+          duration: 500
         });
-        setProgressBar(--current);
+          setProgressBar(--current);
         });
 
         function setProgressBar(curStep){
         var percent = parseFloat(100 / steps) * curStep;
         percent = percent.toFixed();
-        $(".progress-bar")
-        .css("width",percent+"%")
+          $(".progress-bar")
+          .css("width",percent+"%")
         }
 
         $(".submit").click(function(){
-        return false;
+          return false;
         })
 
         });
