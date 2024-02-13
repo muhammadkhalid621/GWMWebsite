@@ -3452,7 +3452,8 @@ body{
     outline-width: 0;
 }
 .section-contact-us-form #msform .action-button {
-    width: 150px;
+    /* width: 150px; */
+    width: 210px;
     height: 64px;
     background: #669ACA;
     font-weight: bold;
@@ -3471,7 +3472,8 @@ body{
     background-color: #669ACA;
 }
 .section-contact-us-form #msform .action-button-previous {
-    width: 150px;
+    /* width: 150px; */
+    width: 210px;
     height: 64px;
     background: #E6E8EC;
     font-weight: bold;
@@ -3529,7 +3531,8 @@ body{
 .section-contact-us-form #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 14.28571428571429%;
+    /* width: 14.28571428571429%; */
+    width: 20%;
     float: left;
     position: relative;
     font-weight: 400;
@@ -3566,7 +3569,7 @@ body{
     content: "6";
 }
 .section-contact-us-form #progressbar #confirm:before {
-    content: "7";
+    content: "5";
 }
 .section-contact-us-form #progressbar li:before {
     width: 60px;
@@ -6658,6 +6661,20 @@ body{
 .about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box {
     margin: 0 0px 20px;
     width: calc(100% - 0px);
+}
+.section-the-gulfway-advantage .gulfway-advantage-container > .gulfway-advantage-thumb .gulf-services-icon i.icon-devops {
+    font-size: 28px;
+    left: -6px;
+}
+.section-our-services .desktop-hidden .our-service-in-mobile .our-service-accordion > .accordion-inner-container .accordion-inner-left .accordion-inner-icon i.icon-media-and-production{
+    font-size: 32px;
+    position: relative;
+    left: -3px;
+}
+.section-our-services .desktop-hidden .our-service-in-mobile .our-service-accordion > .accordion-inner-container .accordion-inner-left .accordion-inner-icon i.icon-youtube{
+    font-size: 28px;
+    position: relative;
+    left: -4px;
 }
 
 
