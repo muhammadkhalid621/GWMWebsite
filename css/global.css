@@ -328,7 +328,7 @@ body{
     outline: none;
     border: none;
     transition: color 0.5s;
-    cursor: pointer;
+    cursor: default;
     border-radius: 30px;
 }
 .section-banner .why-choose-us-head .blob-btn:before {
