@@ -1539,7 +1539,8 @@ body{
 .section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button{
     margin: 0 10px 0px 0px;
     padding: 0 0 0 24px;
-    background: #FFF;
+    /* background: #FFF; */
+    background: transparent;
     border-radius: 4px;
     border: 1px solid #F2F3F5;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.03);
@@ -1601,7 +1602,8 @@ body{
     padding: 48px 48px;
     border-radius: 4px;
     border: 1px solid #F2F3F5;
-    background: #FFF;
+    /* background: #FFF; */
+    background: transparent;
     box-shadow: 0px 12px 30px 0px rgba(6, 28, 61, 0.02);
     display: flex;
     column-gap: 30px;
@@ -1752,7 +1754,8 @@ body{
     padding: 50px;
     border-radius: 4px;
     border: 1px solid #F2F3F5;
-    background: #FFF;
+    /* background: #FFF; */
+    background: transparent;
     box-shadow: 0px 12px 50px 0px rgba(6, 28, 61, 0.03);
     width: calc(33.33333333333333% - 30px);
     box-sizing: border-box;
@@ -1898,7 +1901,8 @@ body{
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-left button{
     margin: 0 0 20px 0;
     padding: 0 0 0 24px;
-    background: #FFF;
+    /* background: #FFF; */
+    background: transparent;
     border-radius: 4px;
     border: 1px solid #F2F3F5;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.03);
