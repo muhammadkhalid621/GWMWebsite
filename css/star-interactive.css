@@ -43,6 +43,7 @@ body {
     background-repeat: repeat-x;
     background-position: center bottom;*/
 }
-.dg.a{
+.dg.a,
+.dg.ac{
   display: none;
 }
