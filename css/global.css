@@ -748,7 +748,7 @@ body{
     color: #616161;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: lighter;
     text-transform: capitalize;
     text-align: left;
     text-decoration: none;
@@ -768,31 +768,46 @@ body{
     background-repeat: no-repeat;
     background-size: 16px;
     background-position: center right 25px;
+    color: rgb(206, 206, 207);
 }
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::placeholder,
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::placeholder {
+    color: rgb(206, 206, 207);
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input:-ms-input-placeholder,
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea:-ms-input-placeholder {
+    color: rgb(206, 206, 207);
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::-ms-input-placeholder,
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::-ms-input-placeholder {
+    color: rgb(206, 206, 207);
+}
+/* .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::placeholder,
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::placeholder {
+    color: #E6E8EC;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+ }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::-webkit-input-placeholder, 
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::-webkit-input-placeholder {
-    color: #CEDFEE;
+    color: #E6E8EC;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input:-moz-placeholder,
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea:-moz-placeholder {
-    color: #CEDFEE;
+    color: #E6E8EC;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::-moz-placeholder, 
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::-moz-placeholder {
-    color: #CEDFEE;
+    color: #E6E8EC;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input:-ms-input-placeholder, 
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea:-ms-input-placeholder {
-    color: #CEDFEE;
+    color: #E6E8EC;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-}
+} */
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields button{
     margin: 0;
     padding: 0;
@@ -1968,7 +1983,8 @@ body{
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo{
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     column-gap: 0;
 }
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech{
@@ -1976,7 +1992,8 @@ body{
     /* padding: 22px; */
     padding: 0px;
     border: 1px solid #F2F3F5;
-    width: 25%;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
     border-top: none;
 }
@@ -1990,10 +2007,16 @@ body{
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(2),
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(3),
 .section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(4),
-.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(5){
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(5),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(6),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(7),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(8),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(9),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(10){
     border-left: none;
 }
-.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(5){
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(5),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(10){
     border-right: none;
 }
 
@@ -2037,7 +2060,7 @@ body{
     padding: 0;
     float: left;
     box-sizing: border-box;
-    width: calc(70% - 40px);
+    width: calc(85% - 40px);
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list{
     margin: 16px 0 0 0;
@@ -2076,7 +2099,7 @@ body{
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right{
     margin: 0 20px;
     padding: 0;
-    width: calc(30% - 40px);
+    width: calc(15% - 40px);
     box-sizing: border-box;
     text-align: right;
 }
@@ -4340,7 +4363,10 @@ body{
     margin: 0 10px 20px;
     width: calc(50% - 20px);
 }
-
+.section-project-detail .project-detail-container .image-container-project {
+    height: 250px;
+    min-height: 250px;
+}
 
 
 
@@ -4776,6 +4802,7 @@ body{
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image {
     margin: 25px 0 0 0;
+    column-gap: 15px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb .image-size-container {
     margin: 30px 0;
@@ -4823,7 +4850,10 @@ body{
 .about-us-thumbnail-container .row-about-us-thumbnail {
     padding: 0 50px;
 }
-
+.section-project-detail .project-detail-container .image-container-project {
+    height: 200px;
+    min-height: 200px;
+}
 
 
 }
@@ -5408,8 +5438,8 @@ body{
     line-height: 44px;
 }
 .section-project-detail .project-detail-container .image-container-project {
-    height: 200px;
-    min-height: 200px;
+    height: 150px;
+    min-height: 150px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head p {
     font-size: 14px;
@@ -5464,13 +5494,16 @@ body{
 }
 .header-nav-menu .wrapper ul {
     padding: 0 50px;
+    transform: translate(0%, 25%);
 }
 .header-nav-menu .wrapper ul li {
-    height: 50px;
+    height: 75px;
+    width: 100%;
+    line-height: 75px;
 }
 .header-nav-menu .wrapper ul li a {
-    padding: 14px 16px;
-    font-size: 20px;
+    padding: 20px 30px;
+    font-size: 24px;
     position: relative;
 }
 .section-footer .footer-columns .columns-25 {
@@ -5663,7 +5696,10 @@ body{
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
     font-size: 14px;
-    margin: 0 45px 0 0px;
+    margin: 0 25px 0 0px;
+}
+.our-portfolio-left .btn{
+    font-size: 16px;
 }
 .section-our-portfolio .our-portfolio-container > .filter-content-thumb {
     margin: 20px 0 0 0;
@@ -5811,14 +5847,19 @@ body{
     line-height: 40px;
 }
 .section-project-detail .project-detail-container .image-container-project {
-    height: 150px;
-    min-height: 150px;
+    height: 120px;
+    min-height: 120px;
+    border-radius: 10px;
+}
+.section-project-detail .project-detail-container .image-container-project img {
+    border-radius: 10px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head p {
     margin: 10px 0 0 0;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image {
     margin: 15px 0 0 0;
+    column-gap: 10px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .image-row {
     margin: 0px -5px;
@@ -6115,6 +6156,27 @@ body{
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .image-row {
     margin: 0px -5px;
 }
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo {
+    grid-template-columns: repeat(2,1fr);
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech img {
+    height: auto;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(5){
+    border-right: 1px solid #F2F3F5;
+}
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(2),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(4),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(6),
+.section-tools-and-technologies .tools-and-technologies-container > .tools-row .tools-technologies-right .tools-technologies-logo .inner-logo-tech:nth-child(8){
+    border-right: none;
+}
+
+.section-our-portfolio .our-portfolio-container .box .image-container {
+    height: auto;
+    min-height: auto;
+}
+
 
 
 
@@ -6122,9 +6184,6 @@ body{
 
 
 @media only screen and (max-width: 742.99px) {
-#canvas {
-    width: 100%;
-}
 .header-section {
     top: 40px;
 }
@@ -6392,7 +6451,9 @@ body{
 .header-nav-menu .wrapper .menu-logo-image img {
     height: 75px;
 }
-
+.our-portfolio-left .btn {
+    font-size: 14px;
+}
 
 
 
@@ -6707,8 +6768,12 @@ body{
     padding: 0 30px;
 }
 .section-project-detail .project-detail-container .image-container-project {
-    height: 100px;
-    min-height: 100px;
+    height: 80px;
+    min-height: 80px;
+    border-radius: 5px;
+}
+.section-project-detail .project-detail-container .image-container-project img {
+    border-radius: 5px;
 }
 .section-about-us .about-us-left {
     padding: 0 30px 0 30px;
