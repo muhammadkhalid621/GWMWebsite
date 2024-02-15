@@ -771,24 +771,27 @@ body{
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::-webkit-input-placeholder, 
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::-webkit-input-placeholder {
-    color: #616161;
+    color: #CEDFEE;
     font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input:-moz-placeholder,
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea:-moz-placeholder {
-    color: #616161;
+    color: #CEDFEE;
     font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::-moz-placeholder, 
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::-moz-placeholder {
-    color: #616161;
+    color: #CEDFEE;
     font-family: 'DM Sans', sans-serif;
-    font: normal;
+    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input:-ms-input-placeholder, 
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea:-ms-input-placeholder {
-    color: #616161;
+    color: #CEDFEE;
     font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields button{
     margin: 0;
@@ -2728,9 +2731,18 @@ body{
     line-height: 32px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image{
-    margin: 40px -10px 0px;
+    margin: 40px 0px;
     padding: 0;
-    width: 100%;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services.remove-space{
+    margin: 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image.remove-space-bottom{
+    margin: 0 0 20px 0;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .image-row{
+    margin: 0px -10px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -2772,7 +2784,7 @@ body{
     padding: 0;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list ul li{
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
     padding: 0;
     list-style: disc;
     color: #616161;
@@ -3845,6 +3857,13 @@ body{
 }
 
 
+
+
+
+
+
+
+
 /* All Page Responsive Media Queries For All Devices CSS Start */
 
 @media only screen and (max-width: 1884.99px) {
@@ -4565,7 +4584,7 @@ body{
     margin: 30px 0 0 0;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
-    margin: 30px -10px 0px;
+    margin: 30px 0px 0px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb.ui-ux-services {
     margin: 30px 0 0 0;
@@ -5054,7 +5073,14 @@ body{
     margin: 5px 0 0 0;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
-    margin: 30px -10px 0px;
+    margin: 30px -5px 0px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .image-row {
+    margin: 0px -5px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .ImageContainer-Size {
+    height: 150px;
+    min-height: 150px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list h4 {
     font-size: 18px;
@@ -5402,12 +5428,12 @@ body{
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb .image-size-container {
     margin: 20px 0;
-    height: 150px;
-    min-height: 150px;
+    height: 120px;
+    min-height: 120px;
+    border-radius: 10px;
 }
-.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .ImageContainer-Size {
-    height: 150px;
-    min-height: 150px;
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb .image-size-container img{
+    border-radius: 10px;
 }
 .about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box {
     margin: 0 5px 10px;
@@ -5575,7 +5601,7 @@ body{
     margin: 20px 0 0 0;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
-    margin: 20px -10px 0px;
+    margin: 20px 0px 0px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list {
     margin: 20px 0 0 0;
@@ -5794,7 +5820,16 @@ body{
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-image {
     margin: 15px 0 0 0;
 }
-
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .image-row {
+    margin: 0px -5px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .ImageContainer-Size {
+    height: 120px;
+    min-height: 120px;
+    width: calc(33.33333333333333% - 10px);
+    margin: 0 5px;
+    border-radius: 10px;
+}
 
 
 
@@ -5862,7 +5897,7 @@ body{
 .section-ready-to-our-professional .our-professional-heading a {
     margin: 10px 10px 0 0px;
     font-size: 14px;
-    max-width: 124px;
+    max-width: 140px;
     height: 44px;
     line-height: 44px;
 }
@@ -5929,7 +5964,7 @@ body{
     margin: 4px 0 0 0;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image {
-    margin: 20px -5px 0px;
+    margin: 20px 0px 0px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image img {
     margin: 0 5px;
@@ -5942,7 +5977,7 @@ body{
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .development-service-list ul li {
     font-size: 14px;
     line-height: 24px;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 15px;
 }
 .section-engineering-excellence .engineering-excellence-container .engineering-excellence-row > .engineering-excellence-content .engineering-excellence-head h1 {
     font-size: 18px;
@@ -6054,12 +6089,19 @@ body{
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb .image-size-container {
     margin: 15px 0;
-    height: 100px;
-    min-height: 100px;
+    height: 80px;
+    min-height: 80px;
+    border-radius: 5px;
+}
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-services-thumb .image-size-container img {
+    border-radius: 5px;
 }
 .section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .ImageContainer-Size {
-    height: 100px;
-    min-height: 100px;
+    height: 70px;
+    min-height: 70px;
+    width: calc(33.33333333333333% - 10px);
+    margin: 0 5px;
+    border-radius: 5px;
 }
 .section-body-content .section-body-row .section-accordion-left > .services-next-page-list ul li a i.icon-media-and-production {
     font-size: 16px;
@@ -6070,7 +6112,9 @@ body{
 .section-our-services .desktop-hidden{
     display: block;
 }
-
+.section-body-content .section-body-row .section-accordion-right > .services-next-page-content .our-web-development-services .service-development-image .image-row {
+    margin: 0px -5px;
+}
 
 
 
@@ -6078,12 +6122,15 @@ body{
 
 
 @media only screen and (max-width: 742.99px) {
-
+#canvas {
+    width: 100%;
+}
 .header-section {
     top: 40px;
 }
 .header-nav-menu .menu-btn {
     right: 40px;
+    top: 10px;
 }
 .header-nav-menu .wrapper .menu-logo-image {
     top: 40px;
@@ -6126,7 +6173,7 @@ body{
     margin: 50px 0 0 80px;
 }
 .header-nav-menu .wrapper ul li {
-    height: 70px;
+    height: 54px;
     width: 100%;
     margin-bottom: 4px;
     /* background-color: rgba(255, 255, 255, 0.1); */
@@ -6139,10 +6186,10 @@ body{
     margin: 0;
     padding: 0 40px;
     top: -50%;
-    transform: translate(0%, 75%);
+    transform: translate(0%, 70%);
 }
 .section-ready-to-our-professional {
-    height: 190px;
+    height: 140px;
 }
 .section-ready-to-our-professional .our-professional-heading h1 {
     font-size: 24px;
@@ -6150,10 +6197,10 @@ body{
 }
 .section-ready-to-our-professional .our-professional-heading a {
     margin: 10px 5px 0 0px;
-    font-size: 12px;
-    max-width: 105px;
-    height: 36px;
-    line-height: 36px;
+    font-size: 10px;
+    max-width: 100px;
+    height: 32px;
+    line-height: 32px;
 }
 .section-footer .footer-row {
     padding: 0 30px;
@@ -6341,6 +6388,12 @@ body{
     width: calc(100% - 20px);
     padding: 20px;
 }
+.header-inner-colum .logo-image-left img,
+.header-nav-menu .wrapper .menu-logo-image img {
+    height: 75px;
+}
+
+
 
 
 
@@ -6371,13 +6424,13 @@ body{
     width: 65%;
 }
 .section-banner .why-choose-us-head .blob-btn {
-    padding: 12px 20px;
-    font-size: 14px;
+    padding: 10px 16px;
+    font-size: 12px;
 }
 .section-banner .why-choose-us-head h1 {
     font-size: 28px;
     line-height: 34px;
-    margin: 12px 0 0 0;
+    margin: 20px 0 0 0;
     text-align: left;
 }
 .section-banner .why-choose-us-head h1 br{
@@ -6418,7 +6471,8 @@ body{
     width: 100%;
 }
 .section-about-us .about-us-right img{
-    display: none;
+    display: block;
+    padding: 15px 30px;
 }
 .section-welcome-to-gulfway .gulfway-heading {
     margin: 30px 0 0 0;
@@ -6438,7 +6492,7 @@ body{
     height: 15px;
 }
 .section-ready-to-our-professional {
-    height: 130px;
+    height: 110px;
 }
 .section-ready-to-our-professional .our-professional-heading h1 {
     font-size: 18px;
@@ -6448,11 +6502,11 @@ body{
     width: 62%;
 }
 .section-ready-to-our-professional .our-professional-heading a {
-    margin: 10px 5px 0 0px;
-    font-size: 10px;
-    max-width: 84px;
-    height: 28px;
-    line-height: 28px;
+    margin: 6px 5px 0 0px;
+    font-size: 8px;
+    max-width: 85px;
+    height: 24px;
+    line-height: 24px;
 }
 .section-footer .footer-columns .columns-25 {
     width: calc(100% - 0px);
@@ -6681,7 +6735,9 @@ body{
     position: relative;
     left: -4px;
 }
-
+.page-wrapper{
+    overflow: unset;
+}
 
 
 

@@ -8,8 +8,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/star-interactive-next.css" rel="stylesheet" />
     <link href="fontello/css/fontello.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -141,15 +141,35 @@
 
                 <div class="our-services-thumb">
                   <div class="image-size-container">
-                    <img src="images/content-marketing-banner.png" alt="" title="" />
+                    <a href="images/content-marketing-banner.png" data-fancybox="group" data-caption="">
+                      <img src="images/content-marketing-banner.png" alt="" title="" />
+                    </a>
                   </div>
                 </div>
 
                 <div class="our-web-development-services">
                   <div class="service-development-image">
-                    <div class="ImageContainer-Size"><img src="images/content-marketing-banner-1.png" alt="" title="" /></div>
-                    <div class="ImageContainer-Size"><img src="images/content-marketing-banner-2.png" alt="" title="" /></div>
-                    <div class="ImageContainer-Size"><img src="images/content-marketing-banner-3.png" alt="" title="" /></div>
+                    <div class="image-row">
+
+                    <div class="ImageContainer-Size">
+                      <a href="images/content-marketing-banner-1.png" data-fancybox="group" data-caption="">
+                        <img src="images/content-marketing-banner-1.png" alt="" title="" />
+                      </a>
+                    </div>
+
+                    <div class="ImageContainer-Size">
+                      <a href="images/content-marketing-banner-2.png" data-fancybox="group" data-caption="">
+                        <img src="images/content-marketing-banner-2.png" alt="" title="" />
+                      </a>
+                    </div>
+
+                    <div class="ImageContainer-Size">
+                      <a href="images/content-marketing-banner-3.png" data-fancybox="group" data-caption="">
+                        <img src="images/content-marketing-banner-3.png" alt="" title="" />
+                      </a>
+                    </div>
+
+                   </div>
                   </div>
                 </div>
 
@@ -249,6 +269,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dat.gui/build/dat.gui.min.js"></script>
     <script src="js/star-interactive-next.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
   </body>
 </html>
