@@ -768,7 +768,7 @@ body{
     background-repeat: no-repeat;
     background-size: 16px;
     background-position: center right 25px;
-    color: rgb(206, 206, 207);
+    color: #616161;
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::placeholder,
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::placeholder {
@@ -780,6 +780,9 @@ body{
 }
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::-ms-input-placeholder,
 .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields textarea::-ms-input-placeholder {
+    color: rgb(206, 206, 207);
+}
+.section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields select option{
     color: rgb(206, 206, 207);
 }
 /* .section-welcome-to-gulfway .lets-quickly-form .row-form-fields > .lets-form-fields input::placeholder,
@@ -3461,7 +3464,7 @@ body{
     color: #616161;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: lighter;
     text-transform: capitalize;
     text-align: left;
     text-decoration: none;
@@ -3475,6 +3478,18 @@ body{
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
+.section-contact-us-form #msform input::placeholder,
+.section-contact-us-form #msform textarea::placeholder {
+    color: rgb(206, 206, 207);
+}
+.section-contact-us-form #msform input:-ms-input-placeholder,
+.section-contact-us-form #msform textarea:-ms-input-placeholder {
+    color: rgb(206, 206, 207);
+}
+.section-contact-us-form #msform input::-ms-input-placeholder,
+.section-contact-us-form #msform textarea::-ms-input-placeholder {
+    color: rgb(206, 206, 207);
+}
 .section-contact-us-form #msform select{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -3482,6 +3497,7 @@ body{
     background-repeat: no-repeat;
     background-size: 16px;
     background-position: center right 25px;
+    color: #616161;
 }
 .section-contact-us-form #msform input:focus,
 .section-contact-us-form #msform textarea:focus {
@@ -3490,6 +3506,9 @@ body{
     box-shadow: none !important;
     border: 1px solid #669ACA;
     outline-width: 0;
+}
+.section-contact-us-form #msform select option{
+    color: rgb(206, 206, 207);
 }
 .section-contact-us-form #msform .action-button {
     /* width: 150px; */
