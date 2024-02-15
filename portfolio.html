@@ -117,7 +117,7 @@
                   <div class="our-portfolio-left">
                     <div class="inner-list" id="myBtnContainer">
                       <ul>
-                        <li><button class="btn" onclick="filterSelection('all')"> Show all</button></li>
+                        <li><button class="btn active" onclick="filterSelection('all')"> Show all</button></li>
                         <li><button class="btn" onclick="filterSelection('cars')"> Development</button></li>
                         <li><button class="btn" onclick="filterSelection('animals')"> UI UX</button></li>
                         <li><button class="btn" onclick="filterSelection('fruits')"> Graphic Design</button></li>
@@ -309,8 +309,8 @@
                           </div>
 
                           <div class="image-content-right">
-                            <h3>Arlene McCoy</h3>
-                            <p>Golio</p>
+                            <h3>Chase Finn</h3>
+                            <p>UI/ UX Designer</p>
                           </div>
 
                         </div>
@@ -340,12 +340,12 @@
                         <div class="image-container">
 
                           <div class="image-content-left">
-                            <img src="images/avatar-image-for-slider.png" alt="" title="" />
+                            <img src="images/avatar-image-for-slider-1.png" alt="" title="" />
                           </div>
 
                           <div class="image-content-right">
-                            <h3>Arlene McCoy</h3>
-                            <p>Golio</p>
+                            <h3>Levi Luke</h3>
+                            <p>UX Developer</p>
                           </div>
 
                         </div>
@@ -376,12 +376,12 @@
                         <div class="image-container">
 
                           <div class="image-content-left">
-                            <img src="images/avatar-image-for-slider.png" alt="" title="" />
+                            <img src="images/avatar-image-for-slider-2.png" alt="" title="" />
                           </div>
 
                           <div class="image-content-right">
-                            <h3>Arlene McCoy</h3>
-                            <p>Golio</p>
+                            <h3>Miles Otis</h3>
+                            <p>Backend Developer</p>
                           </div>
 
                         </div>
@@ -412,12 +412,12 @@
                         <div class="image-container">
 
                           <div class="image-content-left">
-                            <img src="images/avatar-image-for-slider.png" alt="" title="" />
+                            <img src="images/avatar-image-for-slider-3.png" alt="" title="" />
                           </div>
 
                           <div class="image-content-right">
-                            <h3>Arlene McCoy</h3>
-                            <p>Golio</p>
+                            <h3>Ryder Wyatt</h3>
+                            <p>ReactJ Developer</p>
                           </div>
 
                         </div>
@@ -570,6 +570,7 @@
       for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function(){
           var current = document.getElementsByClassName("active");
+          var current =   document.querySelectorAll(".btn.active");
           current[0].className = current[0].className.replace(" active", "");
           this.className += " active";
         });

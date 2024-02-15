@@ -2074,7 +2074,7 @@ body{
     padding: 0;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li{
-    margin: 0 80px 0 0px;
+    margin: 0 40px 0 0px;
     padding: 0;
     list-style: none;
     float: left;
@@ -2437,6 +2437,7 @@ body{
     padding: 0;
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 .section-what-our-client .what-our-client > .what-our-client-right .testimonial .testimonial-content .image-container .image-content-right{
     margin: 0;
@@ -3876,16 +3877,23 @@ body{
     text-align: left;
     text-transform: capitalize;
     text-decoration: none;
-    padding: 0;
+    padding: 8px 25px;
     margin: 0;
+    border-radius: 50px;
     cursor: pointer;
     color: #000000;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .our-portfolio-left .btn:hover {
-    background: none;
+    color: #ffffff;
+    background-color: #5B93C7;
 }
 .our-portfolio-left .btn.active {
-    color: #5B93C7;
+    color: #ffffff;
+    background-color: #5B93C7;
 }
 @keyframes fadeAndScale {
     from {
@@ -4805,9 +4813,9 @@ body{
     line-height: 28px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right .project-detail-head h1 {
     margin: 0 0 20px 0;
@@ -5232,8 +5240,12 @@ body{
     line-height: 26px;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
+    font-size: 15px;
+    margin: 0 20px 0 0px;
+}
+.our-portfolio-left .btn {
     font-size: 16px;
-    margin: 0 50px 0 0px;
+    padding: 6px 18px;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a {
     padding: 12px 24px;
@@ -5443,13 +5455,16 @@ body{
     font-size: 22px;
     line-height: 24px;
 }
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li {
+    margin: 0 5px 0 0px;
+}
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a {
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-left .social-share-now ul li a i {
-    font-size: 14px;
+    font-size: 12px;
 }
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-right {
     padding: 30px;
@@ -5495,7 +5510,9 @@ body{
     margin: 50px 0px 0;
     padding: 0 50px;
 }
-
+.section-project-detail .project-detail-container .project-detail-row > .project-detail-left .detail-background {
+    padding: 25px;
+}
 
 
 
@@ -5718,10 +5735,11 @@ body{
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
     font-size: 14px;
-    margin: 0 25px 0 0px;
+    margin: 0 10px 0 0px;
 }
 .our-portfolio-left .btn{
-    font-size: 16px;
+    font-size: 14px;
+    padding: 6px 18px;
 }
 .section-our-portfolio .our-portfolio-container > .filter-content-thumb {
     margin: 20px 0 0 0;
@@ -6350,7 +6368,7 @@ body{
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-left .inner-list ul li {
     font-size: 14px;
-    margin: 0 24px 0 0px;
+    margin: 0 10px 10px 0px;
 }
 .section-our-portfolio .our-portfolio-container > .show-all-container .our-portfolio-right a {
     padding: 0px 25px;
@@ -6475,6 +6493,7 @@ body{
 }
 .our-portfolio-left .btn {
     font-size: 14px;
+    padding: 6px 16px;
 }
 
 
