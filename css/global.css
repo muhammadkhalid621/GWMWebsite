@@ -6016,7 +6016,10 @@ body{
 .header-nav-menu .wrapper .menu-logo-image img {
     height: 80px;
 }
-
+.section-our-portfolio .our-portfolio-container .box .image-container {
+    height: auto;
+    min-height: auto;
+}
 
 
 
