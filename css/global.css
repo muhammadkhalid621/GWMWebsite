@@ -3920,14 +3920,8 @@ body{
     }
 }
 
-
-
-
-
-
-
-
 /* All Page Responsive Media Queries For All Devices CSS Start */
+
 
 @media only screen and (max-width: 1884.99px) {
 
@@ -3936,8 +3930,10 @@ body{
     line-height: 90px;
 }
 .header-nav-menu .wrapper ul li a {
+    /* padding: 16px 24px;
+    font-size: 32px; */
     padding: 16px 24px;
-    font-size: 32px;
+    font-size: 28px;
 }
 .section-welcome-to-gulfway .gulfway-heading h1{
     font-size: 270px;
@@ -4076,8 +4072,10 @@ body{
 @media only screen and (max-width: 1485.99px) {
 
 .header-nav-menu .wrapper ul li a {
-    padding: 14px 24px;
-    font-size: 28px;
+    /* padding: 14px 24px;
+    font-size: 28px; */
+    padding: 12px 20px;
+    font-size: 24px;
 }
 .section-banner .why-choose-us-head h1 {
     font-size: 62px;
@@ -4447,8 +4445,11 @@ body{
     line-height: 28px;
 }
 .header-nav-menu .wrapper ul li a {
-    padding: 14px 24px;
-    font-size: 24px;
+    /* padding: 14px 24px;
+    font-size: 24px; */
+    padding: 10px 20px;
+    font-size: 20px;
+    position: static;
 }
 .section-welcome-to-gulfway {
     transform: translate(0px, 205px);
@@ -4896,6 +4897,13 @@ body{
     height: 200px;
     min-height: 200px;
 }
+.header-nav-menu .wrapper ul {
+    padding: 0 50px 0 0;
+}
+
+
+
+
 
 
 }
@@ -4920,9 +4928,18 @@ body{
     line-height: 58px;
     margin: 10px 0 0 0;
 }
+.header-nav-menu .wrapper ul li{
+    width: 20%;
+}
 .header-nav-menu .wrapper ul li a {
+    /* padding: 14px 16px;
+    font-size: 22px; */
     padding: 14px 16px;
-    font-size: 22px;
+    font-size: 18px;
+    position: static;
+}
+.header-nav-menu .wrapper ul {
+    padding: 0 80px 0 10px;
 }
 .section-welcome-to-gulfway .gulfway-heading h1 {
     font-size: 140px;
@@ -5531,6 +5548,41 @@ body{
 .section-project-detail .project-detail-container .project-detail-row > .project-detail-left .detail-background {
     padding: 25px;
 }
+.header-inner-colum .logo-image-left img,
+.header-nav-menu .wrapper .menu-logo-image img {
+    height: 80px;
+}
+.header-nav-menu .menu-btn {
+    right: 50px;
+    top: 15px;
+}
+.section-banner .why-choose-us-head .blob-btn {
+    padding: 12px 16px;
+    font-size: 15px;
+}
+.section-banner .why-choose-us-head h1 {
+    font-size: 42px;
+    line-height: 52px;
+    margin: 10px 0 0 0;
+}
+.section-banner .why-choose-us-head svg {
+    height: 44px;
+}
+.section-bottom-arrow {
+    width: 370px !important;
+    height: 370px !important;
+}
+.section-bottom-arrow .change-section .chevron {
+    width: 34px;
+    height: 6px;
+}
+.section-bottom-arrow .change-section {
+    margin: 10px 0 0 0;
+}
+.section-bottom-arrow .change-section.menu-btm-rotate {
+    margin: 55px 0 0 80px;
+}
+
 
 
 
@@ -5542,8 +5594,11 @@ body{
 @media only screen and (max-width: 992.99px) {
 
 .section-banner .why-choose-us-head h1 {
-    font-size: 44px;
+    /* font-size: 44px;
     line-height: 54px;
+    margin: 10px 0 0 0; */
+    font-size: 36px;
+    line-height: 46px;
     margin: 10px 0 0 0;
 }
 .header-nav-menu .wrapper .menu-logo-image {
@@ -5554,13 +5609,13 @@ body{
     transform: translate(0%, 25%);
 }
 .header-nav-menu .wrapper ul li {
-    height: 75px;
+    height: 60px;
     width: 100%;
-    line-height: 75px;
+    line-height: 60px;
 }
 .header-nav-menu .wrapper ul li a {
-    padding: 20px 30px;
-    font-size: 24px;
+    padding: 14px 20px;
+    font-size: 18px;
     position: relative;
 }
 .section-footer .footer-columns .columns-25 {
@@ -5929,7 +5984,38 @@ body{
     margin: 0 5px;
     border-radius: 10px;
 }
-
+.header-inner-colum .logo-image-left img {
+    height: 80px;
+}
+.header-nav-menu .menu-btn {
+    right: 50px;
+    top: 15px;
+}
+.section-banner .why-choose-us-head .blob-btn {
+    padding: 12px 18px;
+    font-size: 14px;
+}
+.section-banner .why-choose-us-head svg {
+    height: 42px;
+}
+.section-banner .why-choose-us-head p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.section-bottom-arrow {
+    width: 350px !important;
+    height: 350px !important;
+}
+.section-bottom-arrow .change-section {
+    margin: 6px 0 0 0;
+}
+.section-bottom-arrow .change-section .chevron {
+    width: 34px;
+    height: 6px;
+}
+.header-nav-menu .wrapper .menu-logo-image img {
+    height: 80px;
+}
 
 
 
@@ -5962,6 +6048,7 @@ body{
 }
 .header-nav-menu .wrapper ul li a {
     font-size: 18px;
+    padding: 14px 20px;
 }
 .header-section {
     top: 50px;
@@ -6281,6 +6368,29 @@ body{
     padding: 10px 16px;
     font-size: 14px;
 }
+.section-bottom-arrow {
+    width: 350px !important;
+    height: 350px !important;
+}
+.section-bottom-arrow .change-section {
+    margin: 6px 0 0 0;
+}
+.section-bottom-arrow .change-section .chevron {
+    width: 32px;
+    height: 6px;
+}
+.header-nav-menu .wrapper .menu-logo-image img {
+    height: 75px;
+}
+.header-nav-menu .wrapper ul li {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+}
+.section-bottom-arrow .change-section.menu-btm-rotate {
+    margin: 50px 0 0 80px;
+}
+
 
 
 
@@ -6347,14 +6457,16 @@ body{
     margin: 50px 0 0 80px;
 }
 .header-nav-menu .wrapper ul li {
-    height: 54px;
+    height: 50px;
+    line-height: 50px;
     width: 100%;
     margin-bottom: 4px;
     /* background-color: rgba(255, 255, 255, 0.1); */
 }
 .header-nav-menu .wrapper ul li a {
-    font-size: 20px;
-    line-height: 70px;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 10px 20px;
 }
 .header-nav-menu .wrapper ul {
     margin: 0;
@@ -6941,12 +7053,6 @@ body{
 
 
 }
-
-
-
-
-
-
 
 
 /* All Page Responsive Media Queries For All Devices CSS End */
