@@ -288,10 +288,11 @@ body{
 .section-banner{
     margin: 0;
     padding: 0;
-    width: 100%;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     left: 50%;
     top: 50%;
+    width: 100%;
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -307,6 +308,11 @@ body{
 .section-banner .why-choose-us-head{
     margin: 0px;
     padding: 0;
+}
+.section-banner .why-choose-us-head .width-hundred{
+    margin: 0px;
+    padding: 0;
+    height: auto;
 }
 .section-banner .why-choose-us-head svg{
     height: 67px;
@@ -1050,6 +1056,9 @@ body{
     /*position: absolute;
     right: 0;
     transform: translate(0, 0px);*/
+}
+.section-about-us .about-us-right.about-image-d-block {
+    display: none;
 }
 .section-about-us .about-us-right img{
     margin: 0;
@@ -3913,7 +3922,6 @@ body{
 
 
 
-
 /* All Page Responsive Media Queries For All Devices CSS Start */
 
 @media only screen and (max-width: 1884.99px) {
@@ -5006,7 +5014,7 @@ body{
 }
 .section-our-services .services-thumbnail-container > .services-thumbnail-left .accordion-header button {
     padding: 0 0 0 15px;
-    font-size: 14px;
+    font-size: 12px;
     height: 56px;
     line-height: 56px;
 }
@@ -5924,16 +5932,25 @@ body{
 @media only screen and (max-width: 820.99px) {
 
 .section-banner .why-choose-us-head h1 {
-    font-size: 38px;
+    /* font-size: 38px;
     line-height: 48px;
-    margin: 5px 0 0 0;
+    margin: 5px 0 0 0; */
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0px 0 0 0;
 }
 .section-banner .why-choose-us-head p {
-    font-size: 16px;
-    line-height: 26px;
+    /* font-size: 16px;
+    line-height: 26px; */
+    font-size: 14px;
+    line-height: 24px;
 }
 .section-banner .why-choose-us-head p br{
     display: none;
+}
+.section-banner .why-choose-us-head svg {
+    height: 40px;
+    margin: 0 0 15px 0;
 }
 .header-nav-menu .wrapper ul li a {
     font-size: 18px;
@@ -6248,6 +6265,15 @@ body{
     font-size: 14px;
     line-height: 32px;
 }
+.header-inner-colum .logo-image-left img {
+    height: 75px;
+}
+.section-banner .why-choose-us-head .blob-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+
 
 
 
@@ -6273,17 +6299,26 @@ body{
     padding: 0 40px;
 }
 .section-banner .why-choose-us-head .blob-btn {
-    padding: 12px 26px;
-    font-size: 16px;
+    /* padding: 12px 26px;
+    font-size: 16px; */
+    padding: 10px 16px;
+    font-size: 12px;
 }
 .section-banner .why-choose-us-head svg {
     height: 48px;
     position: absolute;
 }
 .section-banner .why-choose-us-head h1 {
-    font-size: 36px;
+    /* font-size: 36px;
     line-height: 46px;
+    margin: 15px 0 0 0; */
+    font-size: 32px;
+    line-height: 40px;
     margin: 15px 0 0 0;
+}
+.section-banner .why-choose-us-head p {
+    font-size: 14px;
+    line-height: 20px;
 }
 .header-nav-menu .wrapper ul li a {
     font-size: 16px;
@@ -6620,10 +6655,9 @@ body{
     /* font-size: 30px;
     line-height: 64px;
     left: 35px; */
-
     font-size: 30px;
-    line-height: 36px;
-    left: 30px;
+    line-height: 42px;
+    left: 35px;
 }
 .section-about-us .about-us-left svg {
     height: 15px;
@@ -6876,10 +6910,23 @@ body{
     position: relative;
     left: -4px;
 }
+.section-about-us .about-us-left h1 br{
+    display: none;
+}
 .page-wrapper{
     overflow: unset;
 }
-
+.section-about-us .about-us-right.about-image-d-none{
+    display: none;
+}
+.section-about-us .about-us-right.about-image-d-block{
+    display: block;
+    padding: 15px 30px 0;
+}
+.section-about-us .about-us-right.about-image-d-block img{
+    border-radius: 4px;
+    padding: 0;
+}
 
 
 
