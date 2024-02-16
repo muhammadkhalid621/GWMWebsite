@@ -4892,7 +4892,8 @@ body{
     overflow: unset;
 }
 .page-fixed {
-    padding: 0 50px;
+    padding: 0 30px;
+    overflow: scroll;
 }
 .header-section .header-container .row,
 .section-banner .row{
