@@ -4894,6 +4894,7 @@ body{
 .page-fixed {
     padding: 0 30px;
     overflow: scroll;
+    height: 100%;
 }
 .header-section .header-container .row,
 .section-banner .row{
