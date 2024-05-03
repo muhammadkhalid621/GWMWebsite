@@ -628,6 +628,8 @@ body{
     font-weight: 600;
     line-height: 20px;
     text-align: left;
+    outline: none;
+    border: none;
     text-decoration: none;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -635,9 +637,12 @@ body{
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-.section-welcome-to-gulfway .breadcrumb-list ul li.active a{
-    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+.section-welcome-to-gulfway .breadcrumb-list ul li a:hover{
+    color: #5A94C8;
 }
+/* .section-welcome-to-gulfway .breadcrumb-list ul li.active a{
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+} */
 .section-welcome-to-gulfway .breadcrumb-list ul li:after{
     content: '/';
     font-size: 20px;
@@ -933,7 +938,7 @@ body{
 .section-about-us .about-us-left h1{
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #5A94C8;
     font-family: 'DM Sans', sans-serif;
     font-size: 48px;
     font-style: normal;
@@ -945,7 +950,7 @@ body{
 .section-about-us .about-us-left p{
     margin: 15px 0 0 0;
     padding: 0;
-    color: #616161;
+    color: #9BB0C4;
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -1093,7 +1098,7 @@ body{
     margin: 0 10px;
     padding: 30px 20px;
     border-radius: 4px;
-    border: 1px solid #F2F3F5;
+    border: 1px solid #9BB0C4;
     background: transparent;
     box-shadow: 0px 12px 50px 0px rgba(6, 28, 61, 0.03);
     box-sizing: border-box;
@@ -1121,7 +1126,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 32px;
-    color: #5B93C7;
+    color: #5A94C8;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1139,7 +1144,7 @@ body{
 .about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box h3{
     margin: 15px 0 0 0;
     padding: 0;
-    color: #000;
+    color: #5A94C8;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -1150,7 +1155,7 @@ body{
 .about-us-thumbnail-container .row-about-us-thumbnail .about-us-thumbnail-box p{
     margin: 10px 0 0 0;
     padding: 0;
-    color: #616161;
+    color: #9BB0C4;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -1203,7 +1208,7 @@ body{
 .section-ready-to-our-professional .our-professional-heading h1{
     margin: 0;
     padding: 0;
-    color: #FFF;
+    color: #EFEFEF;
     font-family: 'Teko', sans-serif;
     font-size: 72px;
     font-weight: 700;
@@ -1215,7 +1220,7 @@ body{
 .section-ready-to-our-professional .our-professional-heading a{
     margin: 30px 20px 0 0px;
     padding: 0;
-    background: #5B93C7;
+    background: #5A94C8;
     border: none;
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
@@ -1236,8 +1241,8 @@ body{
     float: left;
 }
 .section-ready-to-our-professional .our-professional-heading a.active{
-    background: #ffffff;
-    color: #5B93C7;
+    background: #EFEFEF;
+    color: #5A94C8;
 }
 
 
@@ -1249,7 +1254,7 @@ body{
 .section-footer{
     margin: 0;
     padding: 80px 0 0;
-    background: #FBFBFB;
+    background: #EFEFEF;
 }
 
 .section-footer .footer-columns{
@@ -1289,7 +1294,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    color: #616161;
+    color: #9BB0C4;
 }
 .section-footer .footer-row > .sitemap-nav-list{
     margin: 0 auto;
@@ -1309,7 +1314,7 @@ body{
 .section-footer .footer-row > .sitemap-nav-list h1{
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #5A94C8;
     font-family: 'DM Sans', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -1332,7 +1337,7 @@ body{
 .section-footer .footer-row > .sitemap-nav-list ul li{
     margin: 0;
     padding: 0;
-    color: #616161;
+    color: #9BB0C4;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -1344,10 +1349,11 @@ body{
     line-height: 46px;
 }
 .section-footer .footer-row > .sitemap-nav-list ul li a:hover{
-    color: #5B93C7;
+    color: #5A94C8;
 }
 .section-footer .footer-row > .sitemap-nav-list ul li span{
-    color: rgba(97, 97, 97, 0.70);
+    color: #9BB0C4;
+    font-weight: 600;
 }
 .section-footer .container-spriter-line{
     width: 100%;
@@ -1356,7 +1362,7 @@ body{
     padding: 0;
 }
 .section-footer .container-spriter-line .copyright-spriter-line{
-    background: #D9D9D9;
+    background: #9BB0C4;
     height: 1px;
     padding: 0px;
     margin: 0 80px;
@@ -1370,7 +1376,7 @@ body{
 .section-footer .container-copyright p{
     margin: 0;
     padding: 20px 0 20px 0;
-    color: #616161;
+    color: #9BB0C4;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
