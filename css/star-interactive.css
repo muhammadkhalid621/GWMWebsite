@@ -6,7 +6,8 @@ body {
     height: 100%;
     cursor: default;
     background: transparent;
-    background: linear-gradient(180deg, #5B93C7 0%, #9DBEDD 100%);
+    background: linear-gradient(180deg, #9BB0C4 0%, #4A545E 100%);
+    /* background: linear-gradient(180deg, #5B93C7 0%, #9DBEDD 100%); */
 }
 
 .filter {

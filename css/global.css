@@ -144,7 +144,8 @@ body{
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    color: #fff;
+    /* color: #fff; */
+    color: #EFEFEF;
     /* background: linear-gradient(90deg, #f92c78, #4114a1);
     background: linear-gradient(375deg, #1cc7d0, #2ede98);
     background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
@@ -238,7 +239,8 @@ body{
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #EFEFEF;
     border-radius: 50px;
     position: absolute;
     line-height: 46px;
@@ -249,7 +251,7 @@ body{
 .header-nav-menu .wrapper ul li a:after {
     position: absolute;
     content: "";
-    background: #5B93C7;
+    background: #5A94C8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
     /* background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
     background: linear-gradient(375deg, #1cc7d0, #2ede98); */
@@ -380,7 +382,8 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50px;
-    background-color: #5B93C7;
+    /* background-color: #5B93C7; */
+    background-color: #5A94C8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
 }
 .section-banner .why-choose-us-head .blob-btn__blobs {
@@ -394,7 +397,8 @@ body{
     top: 2px;
     width: 25%;
     height: 100%;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #EFEFEF;
     border-radius: 100%;
     transform: translate3d(0, 150%, 0) scale(1.7);
     transition: transform 0.45s;
@@ -437,7 +441,8 @@ body{
     text-transform: uppercase;
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
     text-decoration: none;
-    color: #FFF;
+    /* color: #FFF; */
+    color: #EFEFEF;
     line-height: 100px;
 }
 .section-banner .why-choose-us-head p{
@@ -449,7 +454,8 @@ body{
     line-height: 36px;
     text-align: left;
     text-decoration: none;
-    color: #ffffff;
+    color: #EFEFEF;
+    /* color: #ffffff; */
 }
 .section-bottom-container{
     margin: 0;
@@ -465,7 +471,8 @@ body{
 .section-bottom-arrow{
     margin: 0;
     padding: 0;
-    background: rgba(91, 147, 199, 0.50);
+    /* background: rgba(91, 147, 199, 0.50); */
+    background-color: #5A94C8;
     border-radius: 50%;
     width: 450px !important;
     height: 450px !important;
@@ -523,7 +530,8 @@ body{
     top: 0;
     height: 100%;
     width: 50%;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #EFEFEF;
 }
 .section-bottom-arrow .change-section .chevron:before {
     left: 0;
